@@ -91,8 +91,8 @@
 \hypersetup{CJKbookmarks,%
        bookmarksnumbered,%
               colorlinks,%
-               linkcolor=blue,%
-               citecolor=blue,%
+               linkcolor=black,%
+               citecolor=black,%
               plainpages=false,%
             pdfstartview=FitH}
 \AtEndOfPackage{\makeatletter\input{BITthesis.cfg}\makeatother}
