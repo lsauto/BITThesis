@@ -142,73 +142,77 @@
 \newcommand\defenddate[1]{\def\CAST@value@defenddate{#1}}
 \newcommand\institute[1]{\def\CAST@value@institute{#1}}
 \newcommand\chairman[1]{\def\CAST@value@chairman{#1}}
+
 \renewcommand\maketitle{%
   \cleardoublepage
-  \thispagestyle{empty}
+  \thispagestyle{empty}  
   \begin{center}
-    \bf\songti\zihao{-4}
-      \CAST@label@classification~
-      \CASTunderline[100pt]{\CAST@value@classification}
-        \hfill
-      \CAST@label@confidential~
-      \CASTunderline[100pt]{\CAST@value@confidential}
-    \vskip 10pt
-      \CAST@label@UDC~
-      \CASTunderline[108pt]{\CAST@value@UDC}
-        \hfill
-      \CAST@label@serialnumber~
-      \CASTunderline[100pt]{\CAST@value@serialnumber}
-    \vskip \stretch{2}
-      \bf\songti\zihao{-1} \CAST@value@school \\
-      \CAST@value@degree\CAST@label@thesis
-    \vskip \stretch{2}
-      \bf\heiti\zihao{3} \CASTunderline{~\CAST@value@title~}
+    \vspace*{60mm}
+       {\heiti\zihao{-2} \CAST@value@title}
+    \vskip 40mm
+    {\heiti \zihao{-2} \CAST@value@author}
+     \vskip 4mm
+    {\songti \zihao{4} \CAST@value@defenddate}
+  \end{center}
+  \clearpage
+  % \if@twoside
+    % \thispagestyle{empty}
+    % \ifCAST@typeinfo
+    % \fi
+    % \cleardoublepage
+  % \fi
+ 
+  % \newpage
+  % \cleardoublepage
+  \thispagestyle{empty}
+
+%udc ltz
+{
+  {\heiti \zihao{5} \noindent \CAST@label@classification} \CAST@value@classification \\ 
+  {\heiti \zihao{5} \CAST@label@UDC}  \CAST@value@UDC 
+}
+  
+   \begin{center}
+
     \vskip \stretch{1}
-      \bf\kaishu\zihao{4} \CASTunderline{~\CAST@value@author~}
-    \vskip \stretch{2}
-    \bf\fangsong\zihao{4}
+       {\heiti\zihao{-2} \CAST@value@title}
+    \vskip \stretch{1}
+
+    {\fangsong\zihao{4}}      
     \def\tabcolsep{1pt}
     \def\arraystretch{1.5}
-    \begin{tabular}{llcrl}
-      \CAST@label@advisor &
-      \multicolumn{4}{l}{\CASTunderline[299pt]{\CAST@value@advisor}}
+
+    {\heiti\zihao{-3}
+     \begin{tabular}{lc}
+      \CAST@label@author & \CASTunderline[150pt]{\CAST@value@author}
     \\
-      & \multicolumn{4}{l}{\CASTunderline[299pt]{\CAST@value@advisorinstitute}}
+      \CAST@label@institute &  \CASTunderline[150pt]{\CAST@value@institute}
     \\
-      \CAST@label@degree &
-      \CASTunderline[80pt]{\CAST@value@degree} & \hspace{5pt} &
-      \CAST@label@major &
-      \CASTunderline[120pt]{\CAST@value@major}
-    \\
-      \CAST@label@submitdate &
-      \CASTunderline[80pt]{\CAST@value@submitdate} & &
-      \CAST@label@defenddate &
-      \CASTunderline[120pt]{\CAST@value@defenddate}
-    \\
-      \CAST@label@institute &
-      \multicolumn{4}{l}{\CASTunderline[299pt]{\CAST@value@institute}}
-    \\
-      \CAST@label@school &
-      \multicolumn{4}{l}{\CASTunderline[299pt]{\CAST@value@school}}
-    \\[15pt]
-      \multicolumn{4}{r}{\CAST@label@chairman} &
-      \CASTunderline[100pt]{\CAST@value@chairman}
-    \end{tabular}
-  \end{center}
+      \CAST@label@advisor &  \CASTunderline[150pt]{\CAST@value@advisor}
+    \\  
+      \CAST@label@chairman &   \CASTunderline[150pt]{\CAST@value@chairman}
+    \\  
+      \CAST@label@degree &    \CASTunderline[150pt]{\CAST@value@degree}
+    \\  
+      \CAST@label@major &     \CASTunderline[150pt]{\CAST@value@major}
+    \\  
+      \CAST@label@school &     \CASTunderline[150pt]{\CAST@value@school}
+    \\  
+      \CAST@label@defenddate &   \CASTunderline[150pt]{\CAST@value@defenddate}
+    \end{tabular}}
+
+  \end{center} 
+
+  \vskip \stretch{0.5}
   \clearpage
   \if@twoside
     \thispagestyle{empty}
     \ifCAST@typeinfo
-      \vspace*{\stretch{1}}
-      \begin{footnotesize}
-        \noindent
-        Typeset by \LaTeXe{} at \CTEX@todayold \\
-        With package \texttt{BITthesis} \CASTfileversion{} of C\TeX{}.ORG
-      \end{footnotesize}
     \fi
     \cleardoublepage
   \fi
 }
+
 \newcommand\englishtitle[1]{\def\CAST@value@englishtitle{#1}}
 \newcommand\englishauthor[1]{\def\CAST@value@englishauthor{#1}}
 \newcommand\englishadvisor[1]{\def\CAST@value@englishadvisor{#1}}
@@ -216,31 +220,110 @@
 \newcommand\englishdate[1]{\def\CAST@value@englishdate{#1}}
 \newcommand\englishdegree[1]{\def\CAST@value@englishdegree{#1}}
 \newcommand\englishmajor[1]{\def\CAST@value@englishmajor{#1}}
+\newcommand\englishchairman[1]{\def\CAST@value@englishchairman{#1}}
+
 \newcommand\makeenglishtitle{%
   \cleardoublepage
   \thispagestyle{empty}
-  \begin{center}
-    \vspace*{20pt}
-      \sf\zihao{-1} \CAST@value@englishtitle
-    \vskip \stretch{1}
-      \bf\zihao{4} \CAST@value@englishauthor
-    \vskip \stretch{1}
-      \normalfont\zihao{4} \CAST@label@englishadvisor
-    \vskip 3pt
-      \normalfont\zihao{4} \CAST@value@englishadvisor
-    \vskip \stretch{2}
-      \normalfont\normalsize \CAST@value@englishinstitute
-    \vskip 30pt
-      \normalfont\normalsize \CAST@value@englishdate
-    \vskip 20pt
-      \it\normalsize \CAST@label@englishstatement
-  \end{center}
+  
+   \begin{center}
+
+  
+   \vspace*{10em}
+  
+   {\zihao{-2}\textbf{\CAST@value@englishtitle}}
+  
+   \vskip \stretch{1}
+
+   {\zihao{-3}
+     \begin{tabular}{lc}
+      \CAST@label@englishauthor & \CASTunderline[220pt]{\CAST@value@englishauthor}
+    \\
+      \CAST@label@englishinstitute &  \CASTunderline[220pt]{\CAST@value@englishinstitute}
+    \\
+      \CAST@label@englishadvisor &  \CASTunderline[220pt]{\CAST@value@englishadvisor}
+    \\  
+      % \CAST@label@englishchairman &   \CASTunderline[220pt]{\CAST@value@englishchairman}
+    % \\  
+      \CAST@label@englishdegree &    \CASTunderline[220pt]{\CAST@value@englishdegree}
+    \\  
+      \CAST@label@englishmajor &     \CASTunderline[220pt]{\CAST@value@englishmajor}
+    \\  
+      % \CAST@label@englishschool &     \CASTunderline[220pt]{\CAST@value@englishschool}
+    % \\  
+      \CAST@label@englishdate &   \CASTunderline[220pt]{\CAST@value@englishdate}
+    \end{tabular}}
+
+  \end{center} 
+
+  \vskip \stretch{0.5}
   \clearpage
-  \if@twoside
-    \thispagestyle{empty}
-    \cleardoublepage
-  \fi
+  % \if@twoside
+  % \thispagestyle{empty}
+   % \cleardoublepage
+  % \fi
 }
+
+%绘制树立排放的论文题目和学校名称
+\newcommand\makeVerticalTitle{
+   % \cleardoublepage
+   \clearpage
+   \thispagestyle{empty}
+   \vspace*{10mm}
+   \begin{center}
+   {
+    \heiti\zihao{3}
+   % \setstretch{0.8}   
+   % \begin{minipage}{em}
+        \CAST@value@title
+        \vskip 30mm
+        \CAST@value@school
+   % \end{minipage}
+   }
+   \end{center}
+    % \clearpage
+    % \if@twoside
+        % \thispagestyle{empty}
+        % \cleardoublepage
+    % \fi
+  
+}
+% 原创性声明
+\newcommand\makeDeclareOriginal{%
+  \cleardoublepage
+  \thispagestyle{empty}
+  \vspace*{3mm}
+  \begin{center}
+  %{\bf\zihao{3} \CAST@value@school}\\
+  {\bf\zihao{3} \CAST@label@original}
+  \end{center}
+  \vskip 10pt
+  {\zihao{-4}\CAST@label@originalcontent}
+  \vskip 60pt
+  \hspace{13em}\CAST@label@authorsign\hrulefill\hspace{1.5em}
+  \vskip 15pt
+  \hspace{16em}\CAST@label@originalDate\hspace{1em}
+
+  \vskip 20mm
+
+  \begin{center}
+  %{\bf\zihao{3} \CAST@value@school}\\
+  {\bf\zihao{3} \CAST@label@authorization}
+  \end{center}
+  \vskip 10pt
+  {\zihao{-4} \CAST@label@authorizationcontent}
+  \vskip 60pt
+  
+  \CAST@label@authorsign\hrulefill\hspace{3em}\CAST@label@Supervisorsign\hrulefill
+  \vskip 15pt
+  \CAST@label@originalDate\hfill\hspace{3em}\CAST@label@originalDate
+  % \clearpage
+  % \if@twoside
+    % \thispagestyle{empty}
+    % \cleardoublepage
+  % \fi
+}
+
 \fancypagestyle{plain}{%
   \fancyhf{}%
   \renewcommand{\headrulewidth}{0pt}%
