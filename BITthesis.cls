@@ -153,32 +153,32 @@
     {\songti \zihao{4} \CAST@value@defenddate}
   \end{center}
   \clearpage
-  % \if@twoside
-    % \thispagestyle{empty}
-    % \ifCAST@typeinfo
-    % \fi
-    % \cleardoublepage
-  % \fi
+  \if@twoside
+    \thispagestyle{empty}
+    \ifCAST@typeinfo
+    \fi
+    \cleardoublepage
+  \fi
  
-  % \newpage
-  % \cleardoublepage
+  \newpage
+  \cleardoublepage
   \thispagestyle{empty}
 
 %udc ltz
 {
-  {\heiti \zihao{5} \noindent \CAST@label@classification} \CAST@value@classification \\ 
-  {\heiti \zihao{5} \CAST@label@UDC}  \CAST@value@UDC 
+  {\heiti \zihao{5} \noindent \CAST@label@classification} {\zihao{5}\CAST@value@classification} \\ 
+  {\heiti \zihao{5} \CAST@label@UDC}  {\zihao{5} \CAST@value@UDC} 
 }
   
    \begin{center}
-
+  
     \vskip \stretch{1}
        {\heiti\zihao{-2} \CAST@value@title}
     \vskip \stretch{1}
 
-    {\fangsong\zihao{4}}      
-    \def\tabcolsep{1pt}
-    \def\arraystretch{1.5}
+    % {\fangsong\zihao{4}}      
+    % \def\tabcolsep{1pt}
+    \def\arraystretch{1.2}
 
     {\heiti\zihao{-3}
      \begin{tabular}{lc}
