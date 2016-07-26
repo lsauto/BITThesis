@@ -219,20 +219,21 @@
 \newcommand\englishdegree[1]{\def\CAST@value@englishdegree{#1}}
 \newcommand\englishmajor[1]{\def\CAST@value@englishmajor{#1}}
 \newcommand\englishchairman[1]{\def\CAST@value@englishchairman{#1}}
+\newcommand\englishschool[1]{\def\CAST@value@englishschool{#1}}
 
 \newcommand\makeenglishtitle{%
   \cleardoublepage
   \thispagestyle{empty}
   
    \begin{center}
-
   
-   \vspace*{10em}
+   \vspace*{2em}
   
    {\zihao{-2}\textbf{\CAST@value@englishtitle}}
   
    \vskip \stretch{1}
 
+    \def\arraystretch{1.2}
    {\zihao{-3}
      \begin{tabular}{lc}
       \CAST@label@englishauthor & \CASTunderline[220pt]{\CAST@value@englishauthor}
@@ -241,14 +242,14 @@
     \\
       \CAST@label@englishadvisor &  \CASTunderline[220pt]{\CAST@value@englishadvisor}
     \\  
-      % \CAST@label@englishchairman &   \CASTunderline[220pt]{\CAST@value@englishchairman}
-    % \\  
+      \CAST@label@englishchairman &   \CASTunderline[220pt]{\CAST@value@englishchairman}
+    \\  
       \CAST@label@englishdegree &    \CASTunderline[220pt]{\CAST@value@englishdegree}
     \\  
       \CAST@label@englishmajor &     \CASTunderline[220pt]{\CAST@value@englishmajor}
     \\  
-      % \CAST@label@englishschool &     \CASTunderline[220pt]{\CAST@value@englishschool}
-    % \\  
+      \CAST@label@englishschool &     \CASTunderline[220pt]{\CAST@value@englishschool}
+    \\  
       \CAST@label@englishdate &   \CASTunderline[220pt]{\CAST@value@englishdate}
     \end{tabular}}
 
@@ -256,23 +257,21 @@
 
   \vskip \stretch{0.5}
   \clearpage
-  % \if@twoside
-  % \thispagestyle{empty}
-   % \cleardoublepage
-  % \fi
+  \if@twoside
+    \thispagestyle{empty}
+    \cleardoublepage
+  \fi
 }
 
 %绘制树立排放的论文题目和学校名称
 \newcommand\makeVerticalTitle{
-   \cleardoublepage
-   % \clearpage
-   \thispagestyle{empty}
-   \vspace*{10mm}
+ \cleardoublepage
+ \thispagestyle{empty}
+   % \vspace*{10mm}
    \begin{center}
    {
     \heiti\zihao{3}
-   % \setstretch{0.8}   
-   \begin{minipage}{1em}
+   \begin{minipage}[c][\textheight]{1em}
         \CAST@value@title
         \vskip 30mm
         \CAST@value@school
@@ -284,7 +283,6 @@
         \thispagestyle{empty}
         \cleardoublepage
     \fi
-  
 }
 % 原创性声明
 \newcommand\makeDeclareOriginal{%
@@ -315,23 +313,29 @@
   \CAST@label@authorsign\hrulefill\hspace{3em}\CAST@label@Supervisorsign\hrulefill
   \vskip 15pt
   \CAST@label@originalDate\hfill\hspace{3em}\CAST@label@originalDate
-  % \clearpage
-  % \if@twoside
-    % \thispagestyle{empty}
-    % \cleardoublepage
-  % \fi
+  \clearpage
+  \if@twoside
+    \thispagestyle{empty}
+    \cleardoublepage
+  \fi
 }
 
-\fancypagestyle{plain}{%
-  \fancyhf{}%
-  \renewcommand{\headrulewidth}{0pt}%
-  \renewcommand{\footrulewidth}{0pt}%
-}
+
+%_ 页眉页脚
 \pagestyle{fancy}
-  \fancyhf{}
-  \fancyhead[RE]{\small \CAST@value@titlemark}
-  \fancyhead[LO]{\small \leftmark}
-  \fancyhead[LE,RO]{\small ~\thepage~}
+\fancyhf{}
+\fancyhead[C]{\songti \zihao{5} \CAST@label@headschoolname}  % 奇数页左页眉
+\fancyfoot[C]{\songti \zihao{5} ~\thepage~}      % 页脚
+
+
+\fancypagestyle{plain}{% 设置开章页页眉页脚风格(只有页码作为页脚)
+  \fancyhf{}%
+  \fancyhead[C]{\songti \zihao{5} \CAST@label@headschoolname}
+  \fancyfoot[C]{\songti \zihao{5} ~\thepage~} %%首页页脚格式
+  %\renewcommand{\headrulewidth}{0pt}%
+  %\renewcommand{\footrulewidth}{0pt}%
+}  
+  
 \newenvironment{abstract}
   {\Nchapter{\CAST@label@abstract}}
   {}
