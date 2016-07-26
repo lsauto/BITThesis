@@ -49,9 +49,7 @@
 %%   Right brace   \}     Tilde         \~}
 %%
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{BITthesis}
-  [2011/04/06 v0.2 BITthesis
-   document class]
+\ProvidesClass{BITthesis} [2016/07/24 v0.0 BITthesis document class]
 \newif\ifCAST@typeinfo \CAST@typeinfotrue
 \DeclareOption{notypeinfo}{\CAST@typeinfofalse}
 \newif\ifCAST@dvips \CAST@dvipsfalse
@@ -266,26 +264,26 @@
 
 %绘制树立排放的论文题目和学校名称
 \newcommand\makeVerticalTitle{
-   % \cleardoublepage
-   \clearpage
+   \cleardoublepage
+   % \clearpage
    \thispagestyle{empty}
    \vspace*{10mm}
    \begin{center}
    {
     \heiti\zihao{3}
    % \setstretch{0.8}   
-   % \begin{minipage}{em}
+   \begin{minipage}{1em}
         \CAST@value@title
         \vskip 30mm
         \CAST@value@school
-   % \end{minipage}
+   \end{minipage}
    }
    \end{center}
-    % \clearpage
-    % \if@twoside
-        % \thispagestyle{empty}
-        % \cleardoublepage
-    % \fi
+    \clearpage
+    \if@twoside
+        \thispagestyle{empty}
+        \cleardoublepage
+    \fi
   
 }
 % 原创性声明
