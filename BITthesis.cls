@@ -94,15 +94,20 @@
               plainpages=false,%
             pdfstartview=FitH}
 \AtEndOfPackage{\makeatletter\input{BITthesis.cfg}\makeatother}
-\oddsidemargin 1.5 true cm
-\if@twoside
-  \evensidemargin 0 true cm
-\else
-  \evensidemargin 1.5 true cm
-\fi
-\textheight 21 true cm
-\textwidth 14.5 true cm
-\headheight 15pt
+% \oddsidemargin 1.5 true cm
+% \if@twoside
+  % \evensidemargin 0 true cm
+% \else
+  % \evensidemargin 1.5 true cm
+% \fi
+% \textheight 21 true cm
+% \textwidth 14.5 true cm
+% \headheight 15pt
+%% “≥±ﬂæ‡…Ë÷√
+% ,headsep=2.5cm,footskip=1.8cm
+% \usepackage[top=3.5cm,bottom=2.5cm,left=2.7cm,right=2.7cm,headsep=0.2cm]{geometry}
+\usepackage[top=3.5cm,bottom=2.5cm,left=2.7cm,right=2.7cm,includehead=1cm,footskip=0.7cm]{geometry}
+\renewcommand{\baselinestretch}{1.4}
 \parskip 0.5ex plus 0.25ex minus 0.25ex
 \def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
   \thispagestyle{empty}%
