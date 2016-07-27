@@ -104,28 +104,12 @@
 % \textwidth 14.5 true cm
 % \headheight 15pt
 %% 页边距设置
-% ,headsep=2.5cm,footskip=1.8cm
-% \usepackage[top=3.5cm,bottom=2.5cm,left=2.7cm,right=2.7cm,headsep=0.2cm]{geometry}
-\usepackage[top=3.5cm,bottom=2.5cm,left=2.7cm,right=2.7cm,includehead=1cm,headsep=0.55cm,footskip=0.7cm]{geometry}
+\usepackage[top=3.5cm,bottom=2.5cm,left=2.7cm,right=2.7cm,headheight=0.5cm,headsep=0.5cm,footskip=0.7cm]{geometry}
 \renewcommand{\baselinestretch}{1.4}
 \parskip 0.5ex plus 0.25ex minus 0.25ex
 
-%% 设置章节格式 (当CTEXsetup命令中包含中文时,必须放在\begin{document}之后才能正常工作,参考ctex宏包说明 )
-\AtBeginDocument{
-\CTEXsetup[number={\arabic{chapter}},name={第,章},
-            nameformat={\bfseries\heiti\centering\zihao{3}},
-            titleformat={\bfseries\heiti\zihao{3}},
-            beforeskip={-2mm}]{chapter}
-\CTEXsetup[nameformat={\bfseries\heiti\zihao{4}},
-            titleformat={\bfseries\heiti\zihao{4}},
-            format={\raggedright\Large\bfseries}]{section}
-\CTEXsetup[nameformat={\bfseries\heiti\zihao{-4}},
-            titleformat={\bfseries\heiti\zihao{-4}},
-            format={\raggedright}]{subsection}
-\CTEXsetup[nameformat={\bfseries\zihao{-4}},
-            titleformat={\bfseries\zihao{-4}},
-            format={\raggedright}]{subsubsection}}
-
+%% 设置章节格式 
+\CTEXsetup[number={\arabic{chapter}}]{chapter}
 \def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
   \thispagestyle{empty}%
   \hbox{}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
