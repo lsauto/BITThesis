@@ -279,9 +279,14 @@
    {
     \heiti\zihao{3}
    \begin{minipage}[c][\textheight]{1em}
+        % \CAST@value@title
+        % \vskip 30mm
+        % \CAST@value@school
+        \vfill
         \CAST@value@title
-        \vskip 30mm
+        \vfill
         \CAST@value@school
+        \vskip 50mm
    \end{minipage}
    }
    \end{center}
