@@ -63,6 +63,8 @@
 \RequirePackage{ifpdf,ifxetex}
 %% math packages
 \RequirePackage{amsmath,amsthm,amsfonts,amssymb,bm}
+%% add by lss, delete the : in fig
+\usepackage[labelsep=space]{caption}
 %% graphics packages
 \RequirePackage{graphicx}
 %% sort and compress citations
