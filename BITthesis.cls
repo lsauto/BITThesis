@@ -308,11 +308,13 @@
   {\bf\zihao{3} \CAST@label@original}
   \end{center}
   \vskip 10pt
-  {\zihao{-4}\CAST@label@originalcontent}
-  \vskip 60pt
-  \hspace{13em}\CAST@label@authorsign\hrulefill\hspace{1.5em}
+  {\zihao{4}\CAST@label@originalcontent}
+  % \vskip 60pt
+  \vskip 25pt
+  % \hspace{13em}\CAST@label@authorsign\hrulefill\hspace{1.5em}
+  \hspace{10em}{\zihao{4}\CAST@label@authorsign}\hspace{6em}{\zihao{4}\CAST@label@originalDate}\hspace{7em}
   \vskip 15pt
-  \hspace{16em}\CAST@label@originalDate\hspace{1em}
+  % \hspace{16em}\CAST@label@originalDate\hspace{1em}
 
   \vskip 20mm
 
@@ -321,12 +323,15 @@
   {\bf\zihao{3} \CAST@label@authorization}
   \end{center}
   \vskip 10pt
-  {\zihao{-4} \CAST@label@authorizationcontent}
-  \vskip 60pt
-  
-  \CAST@label@authorsign\hrulefill\hspace{3em}\CAST@label@Supervisorsign\hrulefill
-  \vskip 15pt
-  \CAST@label@originalDate\hfill\hspace{3em}\CAST@label@originalDate
+  {\zihao{4} \CAST@label@authorizationcontent}
+  % \vskip 60pt
+  \vskip 25pt
+  % \CAST@label@authorsign\hrulefill\hspace{3em}\CAST@label@Supervisorsign\hrulefill
+  \hspace{10em}{\zihao{4}\CAST@label@authorsign}\hspace{6em}{\zihao{4}\CAST@label@originalDate}\hspace{7em}
+  % \vskip 15pt
+  \vskip 0.5em
+  \hspace{10em}{\zihao{4}\CAST@label@Supervisorsign}\hspace{6em}{\zihao{4}\CAST@label@originalDate}\hspace{7em}
+  % \CAST@label@originalDate\hfill\hspace{3em}\CAST@label@originalDate
   \clearpage
   \if@twoside
     \thispagestyle{empty}
