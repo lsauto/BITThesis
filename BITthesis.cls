@@ -129,8 +129,10 @@
   \edef\reserved@a{\csname ver@BITthesis.cls\endcsname}
 \fi
 \expandafter\CAST@getfileinfo\reserved@a\relax? ? \relax\relax
-\def\CAST@underline[#1]#2{%
-  \CTEXunderline{\hbox to #1{\hfill#2\hfill}}}
+% \def\CAST@underline[#1]#2{%
+  % \CTEXunderline{\hbox to #1{\hfill#2\hfill}}}
+  \def\CAST@underline[#1]#2{%
+  \CTEXunderline{\hbox to #1{#2\hfill}}}
 \def\CASTunderline{\@ifnextchar[\CAST@underline\CTEXunderline}
 \newcommand\classification[1]{\def\CAST@value@classification{#1}}
 \newcommand\confidential[1]{\def\CAST@value@confidential{#1}}
@@ -187,25 +189,25 @@
 
     % {\fangsong\zihao{4}}      
     % \def\tabcolsep{1pt}
-    \def\arraystretch{1.2}
+    \def\arraystretch{0.9}
 
     {\heiti\zihao{-3}
      \begin{tabular}{lc}
-      \CAST@label@author & \CASTunderline[150pt]{\CAST@value@author}
+      \CAST@label@author & \CASTunderline[130pt]{\CAST@value@author}
     \\
-      \CAST@label@institute &  \CASTunderline[150pt]{\CAST@value@institute}
+      \CAST@label@institute &  \CASTunderline[130pt]{\CAST@value@institute}
     \\
-      \CAST@label@advisor &  \CASTunderline[150pt]{\CAST@value@advisor}
+      \CAST@label@advisor &  \CASTunderline[130pt]{\CAST@value@advisor}
     \\  
-      \CAST@label@chairman &   \CASTunderline[150pt]{\CAST@value@chairman}
+      \CAST@label@chairman &   \CASTunderline[130pt]{\CAST@value@chairman}
     \\  
-      \CAST@label@degree &    \CASTunderline[150pt]{\CAST@value@degree}
+      \CAST@label@degree &    \CASTunderline[130pt]{\CAST@value@degree}
     \\  
-      \CAST@label@major &     \CASTunderline[150pt]{\CAST@value@major}
+      \CAST@label@major &     \CASTunderline[130pt]{\CAST@value@major}
     \\  
-      \CAST@label@school &     \CASTunderline[150pt]{\CAST@value@school}
+      \CAST@label@school &     \CASTunderline[130pt]{\CAST@value@school}
     \\  
-      \CAST@label@defenddate &   \CASTunderline[150pt]{\CAST@value@defenddate}
+      \CAST@label@defenddate &   \CASTunderline[130pt]{\CAST@value@defenddate}
     \end{tabular}}
 
   \end{center} 
@@ -242,7 +244,7 @@
   
    \vskip \stretch{1}
 
-    \def\arraystretch{1.2}
+    \def\arraystretch{0.9}
    {\zihao{-3}
      \begin{tabular}{lc}
       \CAST@label@englishauthor & \CASTunderline[220pt]{\CAST@value@englishauthor}
