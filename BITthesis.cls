@@ -67,6 +67,7 @@
 \usepackage[labelsep=space]{caption}
 %% graphics packages
 \RequirePackage{graphicx}
+\usepackage[aboveskip = 0pt,belowskip=0pt, caption=false,font=footnotesize]{subfig}
 %% sort and compress citations
 \RequirePackage[sort&compress,numbers]{natbib}
 %% packages and settings depend on PDF mode
