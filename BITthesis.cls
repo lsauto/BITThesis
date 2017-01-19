@@ -70,6 +70,8 @@
 \usepackage[aboveskip = 0pt,belowskip=0pt, caption=false,font=footnotesize]{subfig}
 %% sort and compress citations
 \RequirePackage[sort&compress,numbers]{natbib}
+%% Using the Table
+\usepackage{tabularx}
 %% packages and settings depend on PDF mode
 \ifxetex
   \RequirePackage[xetex]{hyperref}
