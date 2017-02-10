@@ -118,6 +118,9 @@
 
   % 参考文献
   % 使用 BibTeX
+  \makeatletter % 调节参考文献之间距离
+  \renewcommand{\@openbib@code}{\addtolength{\itemsep}{-0.5em}}
+  \makeatother
   \bibliography{bib/tex}
   \nocite{*}
   % 不使用 BibTeX
