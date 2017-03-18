@@ -1,47 +1,47 @@
 %% BUPTThesis.bst
 %%
-%% ±±¾©Àí¹¤´óÑ§ÑĞ¾¿ÉúÑ§Î»ÂÛÎÄ²Î¿¼ÎÄÏ× BibTeX ÑùÊ½
+%% åŒ—äº¬ç†å·¥å¤§å­¦ç ”ç©¶ç”Ÿå­¦ä½è®ºæ–‡å‚è€ƒæ–‡çŒ® BibTeX æ ·å¼
 %% 
 %%
-%% Ö±½Ó²ÉÓÃÁË±±¾©ÓÊµç´óÑ§µÄÄ£°å
+%% ç›´æ¥é‡‡ç”¨äº†åŒ—äº¬é‚®ç”µå¤§å­¦çš„æ¨¡æ¿
 %%  
 %%
-%% ±¾ÑùÊ½»ùÓÚ IEEEtran ºÍ ThuThesis ĞŞ¸Ä¶ø³É£¬»ù±¾Âú×ã±±¾©ÓÊµç´óÑ§ÑĞ¾¿ÉúÂÛÎÄ¸ñÊ½ÒªÇó
+%% æœ¬æ ·å¼åŸºäº IEEEtran å’Œ ThuThesis ä¿®æ”¹è€Œæˆï¼ŒåŸºæœ¬æ»¡è¶³åŒ—äº¬é‚®ç”µå¤§å­¦ç ”ç©¶ç”Ÿè®ºæ–‡æ ¼å¼è¦æ±‚
 %%
-%% ×÷Õß£º
-%% ÕÅìÏ (email:dazzlezhang@gmail.com)
+%% ä½œè€…ï¼š
+%% å¼ ç…œ (email:dazzlezhang@gmail.com)
 %%
-%% ¸üĞÂ¼ÇÂ¼:
+%% æ›´æ–°è®°å½•:
 %% $LastChangedBy: dazzlezhang $
-%% $LastChangedDate: 2009-06-24 11:30:57 +0800 (Èı, 2009-06-24) $
+%% $LastChangedDate: 2009-06-24 11:30:57 +0800 (ä¸‰, 2009-06-24) $
 %% $LastChangedRevision: 71 $
 
-%% Ò»Ğ©ÉèÖÃµÄÈ±Ê¡Öµ
-% Ó¢ÎÄĞÕÃûÅÅ°æ¸ñÊ½×Ö·û´®, °´<last nameÈ«³Æ>~<first nameÊ××ÖÄ¸><, Jr.>¸ñÊ½
+%% ä¸€äº›è®¾ç½®çš„ç¼ºçœå€¼
+% è‹±æ–‡å§“åæ’ç‰ˆæ ¼å¼å­—ç¬¦ä¸², æŒ‰<last nameå…¨ç§°>~<first nameé¦–å­—æ¯><, Jr.>æ ¼å¼
 FUNCTION {default.name.format.string} {"{vv~}{ll}{~f}{, Jj}"}
 
-% ÁĞ³öµÄ×î¶à×÷ÕßÊıÄ¿, ¼´µ±×÷ÕßÊıÄ¿³¬¹ıÏÂÁĞÊı×ÖÊ±, ³¬³ö²¿·ÖµÄ×÷ÕßĞÕÃû½«ÂÔÈ¥
+% åˆ—å‡ºçš„æœ€å¤šä½œè€…æ•°ç›®, å³å½“ä½œè€…æ•°ç›®è¶…è¿‡ä¸‹åˆ—æ•°å­—æ—¶, è¶…å‡ºéƒ¨åˆ†çš„ä½œè€…å§“åå°†ç•¥å»
 FUNCTION {default.max.num.names.before.forced.et.al} { #3 }
 
-% ÊÇ·ñÎªÃ¤Éó°æ±¾, #0 ±íÊ¾Ã¤Éó½«ÒşÈ¥×÷ÕßĞÅÏ¢, #1 ±íÊ¾·ÇÃ¤Éó
+% æ˜¯å¦ä¸ºç›²å®¡ç‰ˆæœ¬, #0 è¡¨ç¤ºç›²å®¡å°†éšå»ä½œè€…ä¿¡æ¯, #1 è¡¨ç¤ºéç›²å®¡
 FUNCTION {default.is.for.peer.review} { #0 }
 %%%%%%%%%%%%%%
-% Ò»Ğ©¸¨Öúº¯Êı
+% ä¸€äº›è¾…åŠ©å‡½æ•°
 %%%%%%%%%%%%%%
-% #0 ²»ÔÚÖÕ¶ËÏÔÊ¾¿ªÊ¼/Íê³ÉµÄÌáÊ¾ĞÅÏ¢
-% #1 ÏÔÊ¾ÌáÊ¾ĞÅÏ¢
+% #0 ä¸åœ¨ç»ˆç«¯æ˜¾ç¤ºå¼€å§‹/å®Œæˆçš„æç¤ºä¿¡æ¯
+% #1 æ˜¾ç¤ºæç¤ºä¿¡æ¯
 FUNCTION {is.print.banners.to.terminal} {#1}
 
 %%%%%%%%%%%%%%%%
-% °æ±¾ÓëÌáÊ¾ĞÅÏ¢
+% ç‰ˆæœ¬ä¸æç¤ºä¿¡æ¯
 %%%%%%%%%%%%%%%%
-% °æ±¾ĞÅÏ¢
+% ç‰ˆæœ¬ä¿¡æ¯
 FUNCTION{bst.file.version} { "0.2" }
 FUNCTION{bst.file.date} { "2009/01/25" }
 FUNCTION{bst.file.website} { 
   "http://code.google.com/p/buptthesis/" }
 
-% ¿ªÊ¼ÌáÊ¾ĞÅÏ¢
+% å¼€å§‹æç¤ºä¿¡æ¯
 FUNCTION {banner.message}{ 
   is.print.banners.to.terminal
     { "-- BUPTThesis.bst version" " " * bst.file.version *
@@ -57,7 +57,7 @@ FUNCTION {banner.message}{
   if$
 }
 
-% Íê³ÉÌáÊ¾ĞÅÏ¢
+% å®Œæˆæç¤ºä¿¡æ¯
 FUNCTION {completed.message} { 
   is.print.banners.to.terminal
     { "" top$ "Done." top$ }
@@ -66,9 +66,9 @@ FUNCTION {completed.message} {
 }
 
 %%%%%%%%%%%%%%%%%%%
-%% Ô¤¶¨ÒåµÄ×Ö·û´®ºê
+%% é¢„å®šä¹‰çš„å­—ç¬¦ä¸²å®
 %%%%%%%%%%%%%%%%%%%
-% Ó¢ÎÄÔÂ·İ
+% è‹±æ–‡æœˆä»½
 MACRO {jan} {"January"}
 MACRO {feb} {"February"}
 MACRO {mar} {"March"}
@@ -83,24 +83,24 @@ MACRO {nov} {"November"}
 MACRO {dec} {"December"}
 
 %%%%%%%%%%%%
-%% ÌõÄ¿¶¨Òå
+%% æ¡ç›®å®šä¹‰
 %%%%%%%%%%%%
-ENTRY { address			% µØÖ·
-	assignee		% ±ê×¼ÊÚÈ¨ÈË
-	author			% ×÷Õß
-	booktitle		% ×¨Öø/ÂÛÎÄ¼¯Ãû
+ENTRY { address			% åœ°å€
+	assignee		% æ ‡å‡†æˆæƒäºº
+	author			% ä½œè€…
+	booktitle		% ä¸“è‘—/è®ºæ–‡é›†å
 	chapter			% 
 	day			%
 	dayfiled		%
-	edition			% °æ±¾
-	editor			% ±àÕß
-	howpublished		% ³ö°æĞÎÊ½
-	esubtype		% µç×ÓÎÄÏ××ÓÀà
+	edition			% ç‰ˆæœ¬
+	editor			% ç¼–è€…
+	howpublished		% å‡ºç‰ˆå½¢å¼
+	esubtype		% ç”µå­æ–‡çŒ®å­ç±»
 	institution		% 
-	journal			% ÆÚ¿¯
+	journal			% æœŸåˆŠ
 	key			%
-	language		% ÓïÑÔ
-	month			% ÔÂ
+	language		% è¯­è¨€
+	month			% æœˆ
 	monthfiled		%
 	nationality		%
 	newsletter		%
@@ -111,7 +111,7 @@ ENTRY { address			% µØÖ·
 	pages			%
 	publisher		%
 	refdate			%
-	update			% µç×ÓÎÄµµ¸üĞÂ»òĞŞ¸ÄÈÕÆÚ
+	update			% ç”µå­æ–‡æ¡£æ›´æ–°æˆ–ä¿®æ”¹æ—¥æœŸ
 	school			%
 	series			%
 	title			%
@@ -123,40 +123,40 @@ ENTRY { address			% µØÖ·
 	year2			%
 	yearfiled		%
 	url			% URL
-	pubaddress		% ³ö°æµØ
-	CTLname_format_string	% ×÷ÕßÓ¢ÎÄĞÕÃûÅÅ°æ¸ñÊ½
-	CTLmax_names_forced_etal % Ç¿ÖÆÂÔÈ¥µÄ×î´ó×÷ÕßÊı
-	CTLauthor_name_english	 % ×÷ÕßÓ¢ÎÄĞÕÃû
-	CTLauthor_name_chinese	 % ×÷ÕßÖĞÎÄĞÕÃû
-	CTLfor_peer_review	 % ÊÇ·ñÄäÃû
+	pubaddress		% å‡ºç‰ˆåœ°
+	CTLname_format_string	% ä½œè€…è‹±æ–‡å§“åæ’ç‰ˆæ ¼å¼
+	CTLmax_names_forced_etal % å¼ºåˆ¶ç•¥å»çš„æœ€å¤§ä½œè€…æ•°
+	CTLauthor_name_english	 % ä½œè€…è‹±æ–‡å§“å
+	CTLauthor_name_chinese	 % ä½œè€…ä¸­æ–‡å§“å
+	CTLfor_peer_review	 % æ˜¯å¦åŒ¿å
   }
   {}
   { label }
 
 %%%%%%%%%%%%%
-%% ×Ö·û´®³£Á¿
+%% å­—ç¬¦ä¸²å¸¸é‡
 %%%%%%%%%%%%%
-% FUNCTION {bbl.anonymous}   { language empty$ { "Anon" }  { "ØıÃû" } if$ }
+% FUNCTION {bbl.anonymous}   { language empty$ { "Anon" }  { "ä½šå" } if$ }
 FUNCTION {bbl.anonymous} { "" }
-FUNCTION {bbl.etal}        { language empty$ { "et~al" } { "µÈ" } if$ }
-FUNCTION {bbl.sine.loco}   { language empty$ { "S.~l." } { "³ö°æµØ²»Ïê" } if$ }
-FUNCTION {bbl.sine.nomine} { language empty$ { "s.~n." } { "³ö°æÕß²»Ïê" } if$ }
+FUNCTION {bbl.etal}        { language empty$ { "et~al" } { "ç­‰" } if$ }
+FUNCTION {bbl.sine.loco}   { language empty$ { "S.~l." } { "å‡ºç‰ˆåœ°ä¸è¯¦" } if$ }
+FUNCTION {bbl.sine.nomine} { language empty$ { "s.~n." } { "å‡ºç‰ˆè€…ä¸è¯¦" } if$ }
 
-FUNCTION {bbl.comma}       { language empty$ { ", " } { ", " } if$ } %lss
-FUNCTION {bbl.colon}       { language empty$ { ": " } { ": " } if$ } %lss
-FUNCTION {bbl.period}      { language empty$ { "." } { "." } if$ }%lss
+FUNCTION {bbl.comma}       { language empty$ { ", " } { "ï¼Œ" } if$ }
+FUNCTION {bbl.colon}       { language empty$ { ": " } { "ï¼š" } if$ }
+FUNCTION {bbl.period}      { language empty$ { "." } { "ï¼" } if$ }
 FUNCTION {bbl.parallel}    { "~//~" }
 
-FUNCTION {bbl.st}          { "st" }	% ĞòÊı´Êºó×º
-FUNCTION {bbl.nd}          { "nd" }	% ĞòÊı´Êºó×º
-FUNCTION {bbl.rd}          { "rd" }	% ĞòÊı´Êºó×º
-FUNCTION {bbl.th}          { "th" }	% ĞòÊı´Êºó×º
+FUNCTION {bbl.st}          { "st" }	% åºæ•°è¯åç¼€
+FUNCTION {bbl.nd}          { "nd" }	% åºæ•°è¯åç¼€
+FUNCTION {bbl.rd}          { "rd" }	% åºæ•°è¯åç¼€
+FUNCTION {bbl.th}          { "th" }	% åºæ•°è¯åç¼€
 
-FUNCTION {bbl.number}      { "µÚ" }
-FUNCTION {bbl.author}      { "×÷Õß" }
+FUNCTION {bbl.number}      { "ç¬¬" }
+FUNCTION {bbl.author}      { "ä½œè€…" }
 
 %%%%%%%%%%%%
-%% ÕûĞÍ±äÁ¿
+%% æ•´å‹å˜é‡
 %%%%%%%%%%%
 INTEGERS { output.state before.all mid.sentence after.title after.sentence url.sentence after.block before.pages }
 INTEGERS { number.label longest.label.width multiresult 
@@ -165,39 +165,39 @@ INTEGERS { max.num.names.before.forced.et.al }
 INTEGERS { is.for.peer.review }
 
 %%%%%%%%%%%%%
-%% ×Ö·û´®±äÁ¿
+%% å­—ç¬¦ä¸²å˜é‡
 %%%%%%%%%%%%%
 STRINGS { s 
 	  t 
 	  longest.label 
 	  thename 
-	  name.emph.author.en	% Ç¿µ÷ÏÖÊµµÄ×÷ÕßÓ¢ÎÄĞÕÃû
-	  name.emph.author.zh	% Ç¿µ÷ÏÔÊ¾µÄ×÷ÕßÖĞÎÄĞÕÃû
-	  name.format.string	% ĞÕÃûµÄ¸ñÊ½×Ö·û´®
-	  author.name.in.english % ×÷ÕßÓ¢ÎÄĞÕÃû
-	  author.name.in.chinese % ×÷ÕßÖĞÎÄĞÕÃû
+	  name.emph.author.en	% å¼ºè°ƒç°å®çš„ä½œè€…è‹±æ–‡å§“å
+	  name.emph.author.zh	% å¼ºè°ƒæ˜¾ç¤ºçš„ä½œè€…ä¸­æ–‡å§“å
+	  name.format.string	% å§“åçš„æ ¼å¼å­—ç¬¦ä¸²
+	  author.name.in.english % ä½œè€…è‹±æ–‡å§“å
+	  author.name.in.chinese % ä½œè€…ä¸­æ–‡å§“å
 }
 
 %%%%%%%%%%%%%%%%%%%%%
-%% LaTeX ²Î¿¼ÎÄÏ×´úÂë
+%% LaTeX å‚è€ƒæ–‡çŒ®ä»£ç 
 %%%%%%%%%%%%%%%%%%%%%
 
-% Êä³ö .bbl ÎÄ¼ş¿ªÊ¼
+% è¾“å‡º .bbl æ–‡ä»¶å¼€å§‹
 FUNCTION {begin.bib} { 
   "% Generated by BUPTThesis.bst, version: " bst.file.version * 
   " (" * bst.file.date * ")" *
-  write$ newline$		% Êä³ö×¢ÊÍĞĞ£¬ËµÃ÷²úÉú¸ÃbblµÄbst¼°°æ±¾
+  write$ newline$		% è¾“å‡ºæ³¨é‡Šè¡Œï¼Œè¯´æ˜äº§ç”Ÿè¯¥bblçš„bståŠç‰ˆæœ¬
 
-  preamble$ empty$		% Êä³öÇ°µ¼
+  preamble$ empty$		% è¾“å‡ºå‰å¯¼
     'skip$
     { preamble$ write$ newline$ }
   if$
 
   "\begin{thebibliography}{"  longest.label  * "}" * 
-  write$ newline$		% Êä³ö \begin{thebiliography}{x}
+  write$ newline$		% è¾“å‡º \begin{thebiliography}{x}
 }
 
-% Êä³ö .bbl ÎÄ¼ş½áÊø²¿·Ö
+% è¾“å‡º .bbl æ–‡ä»¶ç»“æŸéƒ¨åˆ†
 FUNCTION {end.bib} {
   newline$
   "\end{thebibliography}" 
@@ -205,24 +205,24 @@ FUNCTION {end.bib} {
 }
 
 %%%%%%%%%%%%
-%% µ×²ãº¯Êı
+%% åº•å±‚å‡½æ•°
 %%%%%%%%%%%%
 
-% ¿ØÖÆ±äÁ¿³õÊ¼»¯
+% æ§åˆ¶å˜é‡åˆå§‹åŒ–
 FUNCTION {initialize.controls} {
   default.name.format.string 'name.format.string :=
   default.max.num.names.before.forced.et.al 'max.num.names.before.forced.et.al :=
   default.is.for.peer.review 'is.for.peer.review :=
 }
 
-% ³õÊ¼»¯×î³¤ label
+% åˆå§‹åŒ–æœ€é•¿ label
 FUNCTION {initialize.longest.label} { 
   "" 'longest.label :=
   #1 'number.label :=
   #0 'longest.label.width :=
 }
 
-% ×î³¤ label pass
+% æœ€é•¿ label pass
 FUNCTION {longest.label.pass}
 { number.label int.to.str$ 'label :=
   number.label #1 + 'number.label :=
@@ -234,75 +234,75 @@ FUNCTION {longest.label.pass}
   if$
 }
 
-% Âß¼­·Ç: Õ»¶¥ÔªËØµÄÂß¼­·Ç
+% é€»è¾‘é: æ ˆé¡¶å…ƒç´ çš„é€»è¾‘é
 FUNCTION {not} {
     { #0 }
     { #1 }
   if$
 }
 
-% Âß¼­Óë
+% é€»è¾‘ä¸
 FUNCTION {and} {   
     { skip$ }
     { pop$ #0 }
   if$
 }
 
-% Âß¼­»ò
+% é€»è¾‘æˆ–
 FUNCTION {or} {
     { pop$ #1 }
     { skip$ }
   if$
 }
 
-% ·µ»Ø #1 : Õ»¶¥×Ö·ûÊÇÊı×Ö"0"~"9"
-% ·µ»Ø #0 : ÆäËû
+% è¿”å› #1 : æ ˆé¡¶å­—ç¬¦æ˜¯æ•°å­—"0"~"9"
+% è¿”å› #0 : å…¶ä»–
 FUNCTION {is.num} {
   chr.to.int$
   duplicate$ "0" chr.to.int$ < not
   swap$ "9" chr.to.int$ > not and
 }
 
-% Õ»¶¥ÕûÊı³ËÒÔ10
+% æ ˆé¡¶æ•´æ•°ä¹˜ä»¥10
 FUNCTION {bump.int.mag} {
-  #0 'multiresult :=		% ³õÊ¼»¯³ËÔËËã½á¹û y <- 0
-  { duplicate$ #0 > }		% Õ»¶¥ÕûÊı x = 0 Ê±²ÅÍ£Ö¹Ñ­»·
+  #0 'multiresult :=		% åˆå§‹åŒ–ä¹˜è¿ç®—ç»“æœ y <- 0
+  { duplicate$ #0 > }		% æ ˆé¡¶æ•´æ•° x = 0 æ—¶æ‰åœæ­¢å¾ªç¯
   { #1 -			% x <- x - 1
     multiresult #10 +		
     'multiresult :=		% y <- y + 10
   }
   while$
-  pop$				% ÊÍ·Å x 
-  multiresult			% y Ñ¹Õ»·µ»Ø
+  pop$				% é‡Šæ”¾ x 
+  multiresult			% y å‹æ ˆè¿”å›
 }
 
-% ½«Õ»¶¥×Ö·û("0"~"9")×ª»»ÎªÕûÊı(0~9)
+% å°†æ ˆé¡¶å­—ç¬¦("0"~"9")è½¬æ¢ä¸ºæ•´æ•°(0~9)
 FUNCTION {char.to.integer} { 
   duplicate$ 
   is.num
     { chr.to.int$ "0" chr.to.int$ - }
     { "noninteger character " quote$ * swap$ * quote$ *
       " in integer field of " * cite$ * warning$
-      #0			% Èç¹ûÕ»¶¨×Ö·û²»ÊÇ("0"~"9"), ¸ø³ö¾¯¸æ·µ»Ø 0
+      #0			% å¦‚æœæ ˆå®šå­—ç¬¦ä¸æ˜¯("0"~"9"), ç»™å‡ºè­¦å‘Šè¿”å› 0
     }
   if$
 }
 
-% ½«Õ»¶¥×Ö·û´®×ª»»ÎªÕûÊı
+% å°†æ ˆé¡¶å­—ç¬¦ä¸²è½¬æ¢ä¸ºæ•´æ•°
 FUNCTION {string.to.integer} { 
-  duplicate$ text.length$ 'namesleft := % namesleft <- ×Ö·û´®³¤¶È
+  duplicate$ text.length$ 'namesleft := % namesleft <- å­—ç¬¦ä¸²é•¿åº¦
   #1 'nameptr :=			% nameptr   <- 1
   #0 'numnames :=			% numnames  <- 0
   { nameptr namesleft > not }		% while( ! ( nameptr > namesleft ) )
-  { duplicate$ nameptr #1 substring$	% È¡µÚ nameptr ¸ö×Ö·û x
+  { duplicate$ nameptr #1 substring$	% å–ç¬¬ nameptr ä¸ªå­—ç¬¦ x
     char.to.integer numnames bump.int.mag + 
     'numnames :=		        % numnames <- chr2int( x ) + 10 * numnames
     nameptr #1 +			
     'nameptr :=				% nameptr <- nameptr + 1
   }
   while$
-  pop$				        % ÊÍ·ÅÕ»¶¥ÔªËØ
-  numnames				% numnames Ñ¹Õ»·µ»Ø
+  pop$				        % é‡Šæ”¾æ ˆé¡¶å…ƒç´ 
+  numnames				% numnames å‹æ ˆè¿”å›
 }
 
 % convert the strings "yes" or "no" to #1 or #0 respectively
@@ -321,12 +321,12 @@ FUNCTION {yes.no.to.int}
   if$
 }
 
-% ³õÊ¼»¯×´Ì¬³£Á¿
+% åˆå§‹åŒ–çŠ¶æ€å¸¸é‡
 FUNCTION {initialize.status.constants}
-{ #0 'before.all :=		% ÆğÊ¼
-  #1 'mid.sentence :=		% ¾äÖĞ
-  #2 'after.sentence :=		% ¾äÄ©
-  #3 'after.block :=		% ¿éºó
+{ #0 'before.all :=		% èµ·å§‹
+  #1 'mid.sentence :=		% å¥ä¸­
+  #2 'after.sentence :=		% å¥æœ«
+  #3 'after.block :=		% å—å
   #4 'after.title :=            %
   #5 'before.pages :=		%
 }
@@ -365,8 +365,8 @@ FUNCTION {remove.dots} {
   language empty$
     { "." remove.char 
       duplicate$ "output('.')=" swap$ * warning$ }
-    { "£®" remove.char 
-      duplicate$ "output('£®')=" swap$ * warning$
+    { "ï¼" remove.char 
+      duplicate$ "output('ï¼')=" swap$ * warning$
       "." remove.char 
       duplicate$ "output('.')=" swap$ * warning$ }
   if$
@@ -392,15 +392,15 @@ FUNCTION {bibinfo.check}
 }
 
 %%%%%%%%%%%%
-%% µ÷ÊÔÀı³Ì
+%% è°ƒè¯•ä¾‹ç¨‹
 %%%%%%%%%%%%
 
-% Ä¬ÈÏµ÷ÊÔÊä³öº¯Êı
+% é»˜è®¤è°ƒè¯•è¾“å‡ºå‡½æ•°
 FUNCTION {debug.output} {
   "[DEBUG] " swap$ * top$ 
 }
 
-% ×´Ì¬µ÷ÊÔÊä³öº¯Êı
+% çŠ¶æ€è°ƒè¯•è¾“å‡ºå‡½æ•°
 FUNCTION {debug.output.status} {
   "---- output.state=" 
   output.state before.all = 
@@ -452,14 +452,14 @@ FUNCTION {output.year}
 %   %z
 % }
 
-% ¶ÔÓÚÖĞÎÄÎÄÏ×, ÓÃÈ«½Ç¾äµãÌæ»»Ó¢ÎÄ¾äµã
+% å¯¹äºä¸­æ–‡æ–‡çŒ®, ç”¨å…¨è§’å¥ç‚¹æ›¿æ¢è‹±æ–‡å¥ç‚¹
 FUNCTION {replace.half.width.period} {
 %   % DEBUG
 %   duplicate$ "-- replace.half.width.period(" swap$ * ")" * debug.output
 %   % END OF DEBUG
   language empty$
-    { " " * }				   % ¶ÔÓÚÓ¢ÎÄÎÄÏ×, ÔÚ¾äµãºó¼ÓÒ»¿Õ¸ñ
-    { duplicate$ text.length$ 'numnames := % numnames µÈÓÚ×Ö·û´®³¤¶È
+    { " " * }				   % å¯¹äºè‹±æ–‡æ–‡çŒ®, åœ¨å¥ç‚¹ååŠ ä¸€ç©ºæ ¼
+    { duplicate$ text.length$ 'numnames := % numnames ç­‰äºå­—ç¬¦ä¸²é•¿åº¦
 %       % DEBUG
 %       numnames int.to.str$ "---- text.length$=" swap$ * debug.output
 %       % END OF DEBUG
@@ -481,40 +481,40 @@ FUNCTION {replace.half.width.period} {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Êä³öÀı³Ì: Êä³öÕ»¶¥Ïî²¢¸ù¾İĞèÒªÌí¼Ó±êµã·ûºÅ
+%% è¾“å‡ºä¾‹ç¨‹: è¾“å‡ºæ ˆé¡¶é¡¹å¹¶æ ¹æ®éœ€è¦æ·»åŠ æ ‡ç‚¹ç¬¦å·
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% ·Ç¿ÕÏîÊä³öº¯Êı: ÓÃÓÚÊä³ö·Ç¿ÕÏî
+% éç©ºé¡¹è¾“å‡ºå‡½æ•°: ç”¨äºè¾“å‡ºéç©ºé¡¹
 FUNCTION {output.nonnull} {
 %   % DEBUG
 %   duplicate$ "output.nonnull(" swap$ * ")" * debug.output
 %   debug.output.status
 %   % END OF DEBUG
   swap$
-  % ¸ù¾İµ±Ç°Êä³ö×´Ì¬Ìí¼ÓÇ°ÖÃ±êµã·ûºÅ
-  % before.all      ÆğÊ¼, ²»Ìí¼ÓÈÎºÎ±êµã·ûºÅÖ±½ÓÊä³ö
-  % mid.sentence    ¾äÖĞ, Ç°ÖÃ¶ººÅÊä³ö
-  % after.sentence  ¾äÄ©, Ç°ÖÃ¾äºÅÊä³ö
-  % after.block     ¿éºó, Ç°ÖÃ¾äºÅ, ºóÖÃ \newblock Êä³ö
+  % æ ¹æ®å½“å‰è¾“å‡ºçŠ¶æ€æ·»åŠ å‰ç½®æ ‡ç‚¹ç¬¦å·
+  % before.all      èµ·å§‹, ä¸æ·»åŠ ä»»ä½•æ ‡ç‚¹ç¬¦å·ç›´æ¥è¾“å‡º
+  % mid.sentence    å¥ä¸­, å‰ç½®é€—å·è¾“å‡º
+  % after.sentence  å¥æœ«, å‰ç½®å¥å·è¾“å‡º
+  % after.block     å—å, å‰ç½®å¥å·, åç½® \newblock è¾“å‡º
   % after.title
   output.state mid.sentence =
-    { bbl.comma * write$ }	% mid.sentence Ç°ÖÃ¶ººÅ
+    { bbl.comma * write$ }	% mid.sentence å‰ç½®é€—å·
     { output.state after.block =
-	{ add.period$		    % ¿éºó, ºóÖÃ¾äºÅ
-	  replace.half.width.period % ÎªÖĞÎÄÎÄÏ×Ìæ»»¾äµã
+	{ add.period$		    % å—å, åç½®å¥å·
+	  replace.half.width.period % ä¸ºä¸­æ–‡æ–‡çŒ®æ›¿æ¢å¥ç‚¹
 	  write$ 
 	  newline$  
 %	  "\newblock "  write$ 
-	} % ºóÖÃ \newblock Êä³ö
+	} % åç½® \newblock è¾“å‡º
 	{ output.state before.all =
-            { write$ }		% ÆğÊ¼, ²»Ìí¼ÓÈÎºÎ±êµã·ûºÅÖ±½ÓÊä³ö
+            { write$ }		% èµ·å§‹, ä¸æ·»åŠ ä»»ä½•æ ‡ç‚¹ç¬¦å·ç›´æ¥è¾“å‡º
             { output.state after.title =
 		{ bbl.parallel *
 		  write$ }
 		{ output.state before.pages =
 		    { bbl.colon * 
 		      write$ }
-		    { add.period$ 	% ¾äÄ©, Ç°ÖÃ¾äºÅÊä³ö
+		    { add.period$ 	% å¥æœ«, å‰ç½®å¥å·è¾“å‡º
 		      replace.half.width.period 
 		      write$ }		% 
 		  if$
@@ -530,15 +530,15 @@ FUNCTION {output.nonnull} {
   % s
 }
 
-% ÎŞ¾¯¸æÊä³öº¯Êı
+% æ— è­¦å‘Šè¾“å‡ºå‡½æ•°
 FUNCTION {output} { 
   duplicate$ empty$
-    { pop$ }			% ÈôÊä³öÏîÎª¿Õ, ÔòÉáÈ¥¿ÕÊä³öÏî
-    { output.nonnull }		% ·ñÔòµ÷ÓÃ·Ç¿ÕÊä³öº¯Êı
+    { pop$ }			% è‹¥è¾“å‡ºé¡¹ä¸ºç©º, åˆ™èˆå»ç©ºè¾“å‡ºé¡¹
+    { output.nonnull }		% å¦åˆ™è°ƒç”¨éç©ºè¾“å‡ºå‡½æ•°
   if$
 }
 
-% ¾¯¸æÊä³öº¯Êı: Í¬ output, µ«ÊÇ¶ÔÓÚ¿ÕÏî¸ø³ö¾¯¸æÌáÊ¾
+% è­¦å‘Šè¾“å‡ºå‡½æ•°: åŒ output, ä½†æ˜¯å¯¹äºç©ºé¡¹ç»™å‡ºè­¦å‘Šæç¤º
 FUNCTION {output.warn}
 { 't :=
   duplicate$ empty$
@@ -547,7 +547,7 @@ FUNCTION {output.warn}
   if$
 }
 
-% ½«Êı×Ö×Ö·û´®×ª»»³ÉĞòÊı´ÊĞÎÊ½×Ö·û´®(ÀıÈç: "7" -> "7th")
+% å°†æ•°å­—å­—ç¬¦ä¸²è½¬æ¢æˆåºæ•°è¯å½¢å¼å­—ç¬¦ä¸²(ä¾‹å¦‚: "7" -> "7th")
 FUNCTION {num.to.ordinal} { 
   duplicate$ #-1 #1 substring$ "1" =
      { bbl.st * }
@@ -563,12 +563,12 @@ FUNCTION {num.to.ordinal} {
    if$
 }
 
-% ´Ó×Ö·û´®ÖĞÌáÈ¡Ç°µ¼Êı×ÖµÄº¯Êı
-% Èç¹ûÕ»¶¥×Ö·û´®ÒÔÊı×Ö¿ªÍ·(ÀıÈç: "11th"), Ôò½«×Ö·û´®ÓÃÆäÊı×Ö²¿·Ö(¼´,"11")
-% Ìæ»». ·ñÔò, ±£³ÖÔ­×Ö·û´®²»±ä. ÓÃÓÚ°æ±¾×ª»»º¯Êı(convert.edition)
-% s ±£´æÌáÈ¡³öµÄÊı×Ö, t ±£´æÊ£Óà´ıÉ¨ÃèµÄ×Ö·û´®.
+% ä»å­—ç¬¦ä¸²ä¸­æå–å‰å¯¼æ•°å­—çš„å‡½æ•°
+% å¦‚æœæ ˆé¡¶å­—ç¬¦ä¸²ä»¥æ•°å­—å¼€å¤´(ä¾‹å¦‚: "11th"), åˆ™å°†å­—ç¬¦ä¸²ç”¨å…¶æ•°å­—éƒ¨åˆ†(å³,"11")
+% æ›¿æ¢. å¦åˆ™, ä¿æŒåŸå­—ç¬¦ä¸²ä¸å˜. ç”¨äºç‰ˆæœ¬è½¬æ¢å‡½æ•°(convert.edition)
+% s ä¿å­˜æå–å‡ºçš„æ•°å­—, t ä¿å­˜å‰©ä½™å¾…æ‰«æçš„å­—ç¬¦ä¸².
 FUNCTION {extract.num} {
-  duplicate$ 't :=		% t <- ÊäÈë×Ö·û´®
+  duplicate$ 't :=		% t <- è¾“å…¥å­—ç¬¦ä¸²
   "" 's :=			% s <- ""
   { t empty$ not }		% while( t != "" ) {
   { t #1 #1 substring$		%   tmp <- t[0]
@@ -586,7 +586,7 @@ FUNCTION {extract.num} {
   if$				%
 }
 
-% ½«1st~10thµ¥´ÊĞÎÊ½µÄĞòÊı´Ê×ª»»³É°¢À­²®Êı×ÖĞÎÊ½
+% å°†1st~10thå•è¯å½¢å¼çš„åºæ•°è¯è½¬æ¢æˆé˜¿æ‹‰ä¼¯æ•°å­—å½¢å¼
 FUNCTION {word.to.num} {
   duplicate$ "l" change.case$ 
   's :=				% s <- lower( arg )
@@ -632,8 +632,8 @@ FUNCTION {word.to.num} {
   if$
 }
 
-% ×ª»»×Ö·û´®ĞÎÊ½µÄĞòÊı´ÊÎªÊı×ÖĞÎÊ½µÄĞòÊı´Ê
-% ÀıÈç: ½« "Eleventh" ×ª»»Îª "11th"
+% è½¬æ¢å­—ç¬¦ä¸²å½¢å¼çš„åºæ•°è¯ä¸ºæ•°å­—å½¢å¼çš„åºæ•°è¯
+% ä¾‹å¦‚: å°† "Eleventh" è½¬æ¢ä¸º "11th"
 FUNCTION {convert.edition} { 
   duplicate$ empty$ 'skip$
     { duplicate$ #1 #1 substring$ 
@@ -776,15 +776,15 @@ FUNCTION {is.lower.char}
   if$
 }
 
-% ½«last name×ª»»ÎªÈ«´óĞ´
+% å°†last nameè½¬æ¢ä¸ºå…¨å¤§å†™
 FUNCTION {capitalize.last.name} {
   "u" change.case$
 }
 % FUNCTION {capitalize.last.name}
 % { 
-%   'thename :=			% ÊäÈë²ÎÊı thename
+%   'thename :=			% è¾“å…¥å‚æ•° thename
 %   thename text.length$ 
-%   'namelength :=		% namelength := thename µÄ³¤¶È
+%   'namelength :=		% namelength := thename çš„é•¿åº¦
 %   #1 'charptr :=
 %   #0 'lastnamecapitalized :=
 %   ""
@@ -837,82 +837,82 @@ FUNCTION {capitalize.last.name} {
 %   }
 %   while$
 % }
-% ¸ñÊ½»¯Ã¤ÉóĞÕÃû
+% æ ¼å¼åŒ–ç›²å®¡å§“å
 FUNCTION {format.names.for.peer.review} {
-  's :=				% s := authorÓò
-  #1 'nameptr :=		% nameptr ÊÇĞÕÃûÖ¸Õë£¬³õÊ¼»¯Îª 1
-  s num.names$ 'numnames :=     % ÀûÓÃ num.names$ »ñµÃ s ÖĞµÄ×÷ÕßÊıÁ¿´æÈë nameptr
-  numnames 'namesleft :=	% Î´´¦ÀíµÄĞÕÃûÊı namesleft := numnames
-  % Ñ­»·´¦ÀíËùÓĞĞÕÃû
-  { namesleft #0 > }		% if namesleft > #0 (»¹ÓĞĞÕÃûÃ»ÓĞ¸ñÊ½»¯)
-  { s nameptr 			% Ñ¡ÔñµÚ nameptr ¸öĞÕÃû
-    name.format.string		% °´ name.format.string µÄ¸ñÊ½ÅÅ°æ
-    format.name$		% µ÷ÓÃ format.name$
-    remove.period		% ²¢É¾³ıËõĞ´·ûºÅ'.'
-    't :=			% ¸ñÊ½»¯ºóµÄĞÕÃûÔİ´æÓÚ t
+  's :=				% s := authoråŸŸ
+  #1 'nameptr :=		% nameptr æ˜¯å§“åæŒ‡é’ˆï¼Œåˆå§‹åŒ–ä¸º 1
+  s num.names$ 'numnames :=     % åˆ©ç”¨ num.names$ è·å¾— s ä¸­çš„ä½œè€…æ•°é‡å­˜å…¥ nameptr
+  numnames 'namesleft :=	% æœªå¤„ç†çš„å§“åæ•° namesleft := numnames
+  % å¾ªç¯å¤„ç†æ‰€æœ‰å§“å
+  { namesleft #0 > }		% if namesleft > #0 (è¿˜æœ‰å§“åæ²¡æœ‰æ ¼å¼åŒ–)
+  { s nameptr 			% é€‰æ‹©ç¬¬ nameptr ä¸ªå§“å
+    name.format.string		% æŒ‰ name.format.string çš„æ ¼å¼æ’ç‰ˆ
+    format.name$		% è°ƒç”¨ format.name$
+    remove.period		% å¹¶åˆ é™¤ç¼©å†™ç¬¦å·'.'
+    't :=			% æ ¼å¼åŒ–åçš„å§“åæš‚å­˜äº t
     language empty$		
-      { author.name.in.english }% Èç¹ûÊÇÓ¢ÎÄÎÄÏ×½« author.name.in.english Ñ¹Õ»
-      { author.name.in.chinese } % ·ñÔò½« author.name.in.chinese Ñ¹Õ»
+      { author.name.in.english }% å¦‚æœæ˜¯è‹±æ–‡æ–‡çŒ®å°† author.name.in.english å‹æ ˆ
+      { author.name.in.chinese } % å¦åˆ™å°† author.name.in.chinese å‹æ ˆ
     if$
-    t =				% ÓÃµ±Ç°µÄĞÕÃûÓëÕ»ÉÏµÄĞÕÃû×ö±È½Ï
-      { nameptr int.to.str$	% ½«×÷ÕßĞòºÅ×ª»¯Îª×Ö·û´®
-	"\CJKnumber{" swap$ * "}" * % Ê¹ÓÃÖĞÎÄÊı×Ö
-	bbl.number swap$ * bbl.author * % ¼ÓÉÏ``µÚ''ºÍ``×÷Õß''
+    t =				% ç”¨å½“å‰çš„å§“åä¸æ ˆä¸Šçš„å§“ååšæ¯”è¾ƒ
+      { nameptr int.to.str$	% å°†ä½œè€…åºå·è½¬åŒ–ä¸ºå­—ç¬¦ä¸²
+	"\CJKnumber{" swap$ * "}" * % ä½¿ç”¨ä¸­æ–‡æ•°å­—
+	bbl.number swap$ * bbl.author * % åŠ ä¸Š``ç¬¬''å’Œ``ä½œè€…''
 %	duplicate$ debug.output
       }
       { skip$ }
     if$
-    nameptr #1 + 'nameptr :=	% ĞÕÃûÖ¸Õë¼Ó 1
-    namesleft #1 - 'namesleft := % Ê£ÓàĞÕÃûÊı¼õ 1
+    nameptr #1 + 'nameptr :=	% å§“åæŒ‡é’ˆåŠ  1
+    namesleft #1 - 'namesleft := % å‰©ä½™å§“åæ•°å‡ 1
   }
   while$
 }
-% ¸ñÊ½»¯·ÇÃ¤ÉóĞÕÃû
+% æ ¼å¼åŒ–éç›²å®¡å§“å
 FUNCTION {format.names.for.non.peer.review} { 
-  % ³õÊ¼»¯
-  's :=				% s := authorÓò
-  #1 'nameptr :=		% nameptr ÊÇĞÕÃûÖ¸Õë£¬³õÊ¼»¯Îª 1
-  s num.names$ 'numnames :=	% ÀûÓÃ num.names$ »ñµÃ s ÖĞµÄ×÷ÕßÊıÁ¿´æÈë nameptr
-  numnames 'namesleft :=	% Î´´¦ÀíµÄĞÕÃûÊı namesleft := numnames
-  % Ñ­»·´¦ÀíËùÓĞĞÕÃû
-  { namesleft #0 > }		% if namesleft > #0 (»¹ÓĞĞÕÃûÃ»ÓĞ¸ñÊ½»¯)
-  { s nameptr 			% Ñ¡ÔñµÚ nameptr ¸öĞÕÃû
-    name.format.string		% °´ name.format.string µÄ¸ñÊ½ÅÅ°æ
-    format.name$		% µ÷ÓÃ format.name$
+  % åˆå§‹åŒ–
+  's :=				% s := authoråŸŸ
+  #1 'nameptr :=		% nameptr æ˜¯å§“åæŒ‡é’ˆï¼Œåˆå§‹åŒ–ä¸º 1
+  s num.names$ 'numnames :=	% åˆ©ç”¨ num.names$ è·å¾— s ä¸­çš„ä½œè€…æ•°é‡å­˜å…¥ nameptr
+  numnames 'namesleft :=	% æœªå¤„ç†çš„å§“åæ•° namesleft := numnames
+  % å¾ªç¯å¤„ç†æ‰€æœ‰å§“å
+  { namesleft #0 > }		% if namesleft > #0 (è¿˜æœ‰å§“åæ²¡æœ‰æ ¼å¼åŒ–)
+  { s nameptr 			% é€‰æ‹©ç¬¬ nameptr ä¸ªå§“å
+    name.format.string		% æŒ‰ name.format.string çš„æ ¼å¼æ’ç‰ˆ
+    format.name$		% è°ƒç”¨ format.name$
 %     language empty$		
-%       {	"u" change.case$ }	% Èç¹û²»ÊÇÓïÑÔÎª¿Õ, ×ö´óĞ´×ª»»
+%       {	"u" change.case$ }	% å¦‚æœä¸æ˜¯è¯­è¨€ä¸ºç©º, åšå¤§å†™è½¬æ¢
 %       {	skip$ }
-%     if$				% <language ÅĞ¶Ï½áÊø>
-    remove.period		% ²¢É¾³ıËõĞ´·ûºÅ'.'
-    't :=			% ¸ñÊ½»¯ºóµÄĞÕÃûÔİ´æÓÚ t
+%     if$				% <language åˆ¤æ–­ç»“æŸ>
+    remove.period		% å¹¶åˆ é™¤ç¼©å†™ç¬¦å·'.'
+    't :=			% æ ¼å¼åŒ–åçš„å§“åæš‚å­˜äº t
     nameptr #1 >
       { nameptr max.num.names.before.forced.et.al #1 + =
-          { "others" 't :=	% Èç¹ûµ±Ç°×÷ÕßµÄĞòÊıÒÑ¾­³¬³öÁË×î´óÁĞÏÔ×÷ÕßÊı
-            #1 'namesleft := }	% ÔòÖÃÎ´´¦ÀíĞÕÃûÊıÎª#1, ÒÔ±ãÌø³öÑ­»·
-          { skip$ }		% Èç¹û×÷ÕßĞòÊıÔÚÔÊĞí·¶Î§ÄÚ, ÔòÌø¹ı
-        if$			% <et al ÅĞ¶Ï½áÊø>
-	bbl.comma *		% Ìí¼Ó¶ººÅ
-        namesleft #1 >		% Èôµ±Ç°ĞÕÃû²»ÊÇ×îºóÒ»¸ö
-          { t * }		% ÏÔÊ¾µ±Ç°ĞÕÃû	
-          { t "others" =	% Èôµ±Ç°ĞÕÃûÊÇ×îºóÒ»¸öÇÒºóÃæÓĞÂÔÈ¥µÄĞÕÃû
-              { bbl.etal * }	% Ìí¼Ó", et~al"»ò"£¬µÈ"
-	      { t * }		% Èç¹ûÃ»ÓĞÂÔÈ¥ĞÕÃû£¬ÒÔ¾äµã½áÊø
-	    if$			% <others ÅĞ¶Ï½áÊø>
+          { "others" 't :=	% å¦‚æœå½“å‰ä½œè€…çš„åºæ•°å·²ç»è¶…å‡ºäº†æœ€å¤§åˆ—æ˜¾ä½œè€…æ•°
+            #1 'namesleft := }	% åˆ™ç½®æœªå¤„ç†å§“åæ•°ä¸º#1, ä»¥ä¾¿è·³å‡ºå¾ªç¯
+          { skip$ }		% å¦‚æœä½œè€…åºæ•°åœ¨å…è®¸èŒƒå›´å†…, åˆ™è·³è¿‡
+        if$			% <et al åˆ¤æ–­ç»“æŸ>
+	bbl.comma *		% æ·»åŠ é€—å·
+        namesleft #1 >		% è‹¥å½“å‰å§“åä¸æ˜¯æœ€åä¸€ä¸ª
+          { t * }		% æ˜¾ç¤ºå½“å‰å§“å	
+          { t "others" =	% è‹¥å½“å‰å§“åæ˜¯æœ€åä¸€ä¸ªä¸”åé¢æœ‰ç•¥å»çš„å§“å
+              { bbl.etal * }	% æ·»åŠ ", et~al"æˆ–"ï¼Œç­‰"
+	      { t * }		% å¦‚æœæ²¡æœ‰ç•¥å»å§“åï¼Œä»¥å¥ç‚¹ç»“æŸ
+	    if$			% <others åˆ¤æ–­ç»“æŸ>
 	  }
-        if$ 			% <namesleft ÅĞ¶Ï½áÊø>
+        if$ 			% <namesleft åˆ¤æ–­ç»“æŸ>
       }
-      { t }			% Èç¹ûÊÇµÚÒ»¸ö×÷Õß, Ö±½Ó½«ÅÅ°æºóµÄĞÕÃûÑ¹Õ»
+      { t }			% å¦‚æœæ˜¯ç¬¬ä¸€ä¸ªä½œè€…, ç›´æ¥å°†æ’ç‰ˆåçš„å§“åå‹æ ˆ
     if$
-    nameptr #1 + 'nameptr :=	% ĞÕÃûÖ¸Õë¼Ó 1
-    namesleft #1 - 'namesleft := % Ê£ÓàĞÕÃûÊı¼õ 1
+    nameptr #1 + 'nameptr :=	% å§“åæŒ‡é’ˆåŠ  1
+    namesleft #1 - 'namesleft := % å‰©ä½™å§“åæ•°å‡ 1
   }
   while$
 }
-% ¸ñÊ½»¯ĞÕÃû
+% æ ¼å¼åŒ–å§“å
 FUNCTION {format.names} {
   is.for.peer.review 
-    { format.names.for.peer.review }	 % ¸ñÊ½»¯Ã¤ÉóĞÕÃû
-    { format.names.for.non.peer.review } % ¸ñÊ½»¯·ÇÃ¤ÉóĞÕÃû
+    { format.names.for.peer.review }	 % æ ¼å¼åŒ–ç›²å®¡å§“å
+    { format.names.for.non.peer.review } % æ ¼å¼åŒ–éç›²å®¡å§“å
   if$
 }
 FUNCTION {format.authors}
@@ -939,17 +939,17 @@ FUNCTION {format.assignees} {
   if$
 }
 
-% ÒëÕß¸ñÊ½
+% è¯‘è€…æ ¼å¼
 FUNCTION {format.translators}
 { translator empty$
-    { "" }			% ÎŞÒëÕß
-    { new.block			% ÓĞÒëÕß
-      translator format.names "£¬Òë" *
+    { "" }			% æ— è¯‘è€…
+    { new.block			% æœ‰è¯‘è€…
+      translator format.names "ï¼Œè¯‘" *
     }
   if$
 }
 
-% »ú¹¹¸ñÊ½
+% æœºæ„æ ¼å¼
 FUNCTION {format.institution} { 
   institution empty$
     { "" }
@@ -957,7 +957,7 @@ FUNCTION {format.institution} {
   if$
 }
 
-% ×éÖ¯¸ñÊ½
+% ç»„ç»‡æ ¼å¼
 FUNCTION {format.organization} { 
   organization empty$
     { "" }
@@ -965,14 +965,14 @@ FUNCTION {format.organization} {
   if$
 }
 
-% ÎÄÏ×ÀàĞÍ±êÖ¾´úÂë/µç×ÓÎÄÏ×ÔØÌå±êÖ¾´úÂë
+% æ–‡çŒ®ç±»å‹æ ‡å¿—ä»£ç /ç”µå­æ–‡çŒ®è½½ä½“æ ‡å¿—ä»£ç 
 FUNCTION {bib.type.designator} {
 %   % DEBUG
 %   "bib.type.designator(type:" type$ * debug.output
 %   "                    url: " url empty$ { "<N/A>" }{ url } if$  * debug.output
 %   % END OF DEBUG
 
-  % ÎÄÏ×ÀàĞÍ±êÖ¾´úÂë
+  % æ–‡çŒ®ç±»å‹æ ‡å¿—ä»£ç 
   type$ "book" = type$ "inbook" = or
     { "M" }
     { type$ "standard" = 
@@ -1011,7 +1011,7 @@ FUNCTION {bib.type.designator} {
 					}
 				      if$
 				    }
-				    { "" } % ÆäËû
+				    { "" } % å…¶ä»–
 				  if$	   % electronics
 				}
 			      if$ % online/webpage/www
@@ -1032,7 +1032,7 @@ FUNCTION {bib.type.designator} {
 %   % DEBUG
 %   duplicate$ "                    doc.designator: " swap$ * debug.output
 %   % END OF DEBUG
-  % µç×ÓÎÄÏ×ÔØÌå±êÖ¾´úÂë
+  % ç”µå­æ–‡çŒ®è½½ä½“æ ‡å¿—ä»£ç 
   duplicate$ "" =
     { skip$ }
     { "~[" swap$ *
@@ -1073,7 +1073,7 @@ FUNCTION {format.title}
   if$
 }
 
-% ¸ñÊ½»¯ÄêÔÂÈÕ``YYYY-MM-DD''
+% æ ¼å¼åŒ–å¹´æœˆæ—¥``YYYY-MM-DD''
 FUNCTION {format.year.month.day} { 
   year empty$
     { "YYYY" }
@@ -1117,33 +1117,33 @@ FUNCTION {format.reference.date} {
   if$
 }
 
-% patentµÄÌâÃûÏî: ×¨ÀûÌâÃû: ×¨Àû¹ú±ğ, ×¨ÀûºÅ~[ÎÄÏ×ÀàĞÍ±êÖ¾]
+% patentçš„é¢˜åé¡¹: ä¸“åˆ©é¢˜å: ä¸“åˆ©å›½åˆ«, ä¸“åˆ©å·~[æ–‡çŒ®ç±»å‹æ ‡å¿—]
 FUNCTION {format.patent.title} { 
-  title empty$			% ×¨ÀûÌáÃû
+  title empty$			% ä¸“åˆ©æå
     { "" }
     { new.block
       title bbl.colon * 
-      nationality empty$		% ×¨Àû¹ú±ğ, ×¨ÀûºÅ
-	{ % ×¨Àû¹ú±ğÎª±Ø±¸Ïî
+      nationality empty$		% ä¸“åˆ©å›½åˆ«, ä¸“åˆ©å·
+	{ % ä¸“åˆ©å›½åˆ«ä¸ºå¿…å¤‡é¡¹
 	  "The nationality in " cite$ * " is missing." * warning$
 	}
 	{ number empty$
-	    { % ×¨ÀûºÅÎª±ØÑ¡Ïî
+	    { % ä¸“åˆ©å·ä¸ºå¿…é€‰é¡¹
 	      "The number in " cite$ * " is missing." * warning$
 	    }
-	    { % ²úÉú``×¨Àû¹ú±ğ, ×¨ÀûºÅ''
+	    { % äº§ç”Ÿ``ä¸“åˆ©å›½åˆ«, ä¸“åˆ©å·''
 	      nationality * bbl.comma * number *
 	    }
 	  if$
 	}
       if$
-      % ÎÄÏ×ÀàĞÍ±êÖ¾
+      % æ–‡çŒ®ç±»å‹æ ‡å¿—
       bib.type.designator *
     }
   if$
 }
 
-% patentµÄ³ö°æÏî:
+% patentçš„å‡ºç‰ˆé¡¹:
 FUNCTION {format.patent.publication} { 
   new.block
   format.year.month.day
@@ -1160,8 +1160,8 @@ FUNCTION {format.patent.publication} {
   if$
 }
 
-% electronicµÄÖ÷ÒªÔğÈÎÕß:
-%   author »ò organization
+% electronicçš„ä¸»è¦è´£ä»»è€…:
+%   author æˆ– organization
 FUNCTION {format.electronic.authors}
 {
   author empty$
@@ -1174,10 +1174,10 @@ FUNCTION {format.electronic.authors}
   if$
 }
 
-% electronicµÄ³ö°æÏî
+% electronicçš„å‡ºç‰ˆé¡¹
 FUNCTION {format.electronic.publication} { 
   new.block
-  % ³ö°æµØ: ³ö°æÕß
+  % å‡ºç‰ˆåœ°: å‡ºç‰ˆè€…
   address empty$
     { "" }
     { address 
@@ -1188,7 +1188,7 @@ FUNCTION {format.electronic.publication} {
     }
   if$
   
-  % ³ö°æÄê
+  % å‡ºç‰ˆå¹´
   year empty$
     { skip$ }
     { publisher empty$ 
@@ -1199,7 +1199,7 @@ FUNCTION {format.electronic.publication} {
   if$
 }
 
-%% articleµÄ±êÌâ¸ñÊ½
+%% articleçš„æ ‡é¢˜æ ¼å¼
 FUNCTION {format.atitle}
 { title empty$
     { "" }
@@ -1219,7 +1219,7 @@ FUNCTION {format.atitle}
     }
   if$
 }
-%% incollectionµÄ±êÌâ¸ñÊ½
+%% incollectionçš„æ ‡é¢˜æ ¼å¼
 FUNCTION {format.ictitle}
 { title empty$
     { "" }
@@ -1228,7 +1228,7 @@ FUNCTION {format.ictitle}
     }
   if$
 }
-%% inproceedingsµÄ±êÌâ¸ñÊ½
+%% inproceedingsçš„æ ‡é¢˜æ ¼å¼
 FUNCTION {format.iptitle}
 { title empty$
     { "" }
@@ -1263,7 +1263,7 @@ FUNCTION {n.dashify}
   while$
 }
 
-% Äê£¬¾í£¨ÆÚ£©
+% å¹´ï¼Œå·ï¼ˆæœŸï¼‰
 FUNCTION {format.year.volume.number} {
   year empty$
     { "" }
@@ -1338,9 +1338,9 @@ function {format.year.year}
   if$
 }
 
-% ×¨Öø±êÌâ¸ñÊ½
+% ä¸“è‘—æ ‡é¢˜æ ¼å¼
 FUNCTION {format.book.title} { 
-  new.block			% Éú³ÉÒ»¸öĞÂµÄblock
+  new.block			% ç”Ÿæˆä¸€ä¸ªæ–°çš„block
   title 
   type$ "proceedings" =
     { address empty$
@@ -1359,25 +1359,25 @@ FUNCTION {format.book.title} {
     }
     { skip$ }
   if$
-  bib.type.designator *	% ±êÌâ + [ÎÄÏ×±êÖ¾´úÂë/µç×ÓÎÄÏ×ÔØÌå±êÖ¾´úÂë]
+  bib.type.designator *	% æ ‡é¢˜ + [æ–‡çŒ®æ ‡å¿—ä»£ç /ç”µå­æ–‡çŒ®è½½ä½“æ ‡å¿—ä»£ç ]
 }
 
-% ¿Æ¼¼±¨¸æ±êÌâ¸ñÊ½
+% ç§‘æŠ€æŠ¥å‘Šæ ‡é¢˜æ ¼å¼
 FUNCTION {format.techreport.title} { 
   title empty$
     { "" }
-    { new.block			% Éú³ÉÒ»¸öĞÂµÄblock
-      title			% ±êÌâ + 
-      number empty$		% ±àºÅ +
+    { new.block			% ç”Ÿæˆä¸€ä¸ªæ–°çš„block
+      title			% æ ‡é¢˜ + 
+      number empty$		% ç¼–å· +
 	{ "" }
 	{ bbl.comma * number }
       if$ *	  
-      bib.type.designator *	% [ÎÄÏ×±êÖ¾´úÂë/µç×ÓÎÄÏ×ÔØÌå±êÖ¾´úÂë]
+      bib.type.designator *	% [æ–‡çŒ®æ ‡å¿—ä»£ç /ç”µå­æ–‡çŒ®è½½ä½“æ ‡å¿—ä»£ç ]
     }
   if$
 }
 
-% Á¬Ğø³ö°æÎï±êÌâ¸ñÊ½
+% è¿ç»­å‡ºç‰ˆç‰©æ ‡é¢˜æ ¼å¼
 FUNCTION {format.jtitle}
 { title "~[J" *
   url empty$
@@ -1386,7 +1386,7 @@ FUNCTION {format.jtitle}
   if$
 }
 
-% ÂÛÎÄ¼¯±êÌâ¸ñÊ½
+% è®ºæ–‡é›†æ ‡é¢˜æ ¼å¼
 FUNCTION {format.ptitle.volume}
 { title 
   volume empty$
@@ -1446,16 +1446,16 @@ FUNCTION {format.number.series}
   if$
 }
 
-% °æ±¾Ïî¸ñÊ½
+% ç‰ˆæœ¬é¡¹æ ¼å¼
 FUNCTION {format.edition} { 
   edition empty$
     { "" }
-    { new.block			% °æ±¾Ïî°´Ò»¸öblockÊä³ö
-      language empty$		% Ó¢ÎÄÎÄÏ×°æ±¾ºÅ×Ô¶¯×ª»»³ÉÊı×ÖĞÎÊ½µÄĞòÊı´Ê
+    { new.block			% ç‰ˆæœ¬é¡¹æŒ‰ä¸€ä¸ªblockè¾“å‡º
+      language empty$		% è‹±æ–‡æ–‡çŒ®ç‰ˆæœ¬å·è‡ªåŠ¨è½¬æ¢æˆæ•°å­—å½¢å¼çš„åºæ•°è¯
 	{ edition convert.edition
 	  "l" change.case$ " ed" * 
 	}
-	{ edition }		% ÖĞÎÄÎÄÏ×°æ±¾ºÅÖ±½ÓÊä³ö
+	{ edition }		% ä¸­æ–‡æ–‡çŒ®ç‰ˆæœ¬å·ç›´æ¥è¾“å‡º
       if$
     }
   if$
@@ -1599,7 +1599,7 @@ FUNCTION {format.in.ed.booktitle.volume}
 	'skip$
 	{ language empty$
 	    { "Vol." * volume * }
-	    { "£ºµÚ" * volume * "¾í" * }
+	    { "ï¼šç¬¬" * volume * "å·" * }
 	  if$
 	}
       if$
@@ -1718,48 +1718,48 @@ FUNCTION {format.incoll.inproc.crossref}
   " \cite{" * crossref * "}" *
 }
 
-% ³ö°æµØ: ³ö°æÕß
+% å‡ºç‰ˆåœ°: å‡ºç‰ˆè€…
 FUNCTION {format.address.publisher} {
   new.block
   type$ "inproceedings" =
     { pubaddress empty$
-	{ "[" bbl.sine.loco * "]" * bbl.colon * % ÎŞ³ö°æµØ
+	{ "[" bbl.sine.loco * "]" * bbl.colon * % æ— å‡ºç‰ˆåœ°
 	  publisher empty$
 	    { "there's neither pubaddress nor publisher in " cite$ * warning$
-	      "[" * bbl.sine.nomine * "]" * % ÎŞ³ö°æÕß
+	      "[" * bbl.sine.nomine * "]" * % æ— å‡ºç‰ˆè€…
 	    }
 	    { "there's a publisher but no pubaddress in " cite$ * warning$
-	      publisher *		% ÓĞ³ö°æÕß
+	      publisher *		% æœ‰å‡ºç‰ˆè€…
 	    }
 	  if$
 	}
-	{ pubaddress bbl.colon *	% ÓĞ³ö°æµØ
+	{ pubaddress bbl.colon *	% æœ‰å‡ºç‰ˆåœ°
 	  publisher empty$
 	    { "there's a pubaddress but no publisher in " cite$ * warning$
-	      "[" * bbl.sine.nomine * "]" * % ÎŞ³ö°æÕß
+	      "[" * bbl.sine.nomine * "]" * % æ— å‡ºç‰ˆè€…
 	    }
-	    { publisher * }		% ÓĞ³ö°æÕß
+	    { publisher * }		% æœ‰å‡ºç‰ˆè€…
 	  if$
 	}
       if$
     }
     { address empty$
-	{ "[" bbl.sine.loco * "]" * bbl.colon * % ÎŞ³ö°æµØ
+	{ "[" bbl.sine.loco * "]" * bbl.colon * % æ— å‡ºç‰ˆåœ°
 	  publisher empty$
 	    { "there's neither address nor publisher in " cite$ * warning$
-	      "[" * bbl.sine.nomine * "]" * % ÎŞ³ö°æÕß
+	      "[" * bbl.sine.nomine * "]" * % æ— å‡ºç‰ˆè€…
 	    }
 	    { "there's a publisher but no address in " cite$ * warning$
-	      publisher *		% ÓĞ³ö°æÕß
+	      publisher *		% æœ‰å‡ºç‰ˆè€…
 	    }
 	  if$
 	}
-	{ address bbl.colon *	% ÓĞ³ö°æµØ
+	{ address bbl.colon *	% æœ‰å‡ºç‰ˆåœ°
 	  publisher empty$
 	    { "there's a address but no publisher in " cite$ * warning$
-	      "[" * bbl.sine.nomine * "]" * % ÎŞ³ö°æÕß
+	      "[" * bbl.sine.nomine * "]" * % æ— å‡ºç‰ˆè€…
 	    }
-	    { publisher * }		% ÓĞ³ö°æÕß
+	    { publisher * }		% æœ‰å‡ºç‰ˆè€…
 	  if$
 	}
       if$
@@ -1767,7 +1767,7 @@ FUNCTION {format.address.publisher} {
   if$
 }
 
-% ³ö°æµØ: ³ö°æÕß, ³ö°æÄê
+% å‡ºç‰ˆåœ°: å‡ºç‰ˆè€…, å‡ºç‰ˆå¹´
 FUNCTION {format.address.publisher.year} { 
 %   % DEBUG
 %   "-- format.address.publisher.year(){" debug.output
@@ -1778,50 +1778,50 @@ FUNCTION {format.address.publisher.year} {
   new.block
   type$ "inproceedings" =
     { pubaddress empty$
-	{ "" % "[" bbl.sine.loco * "]" * bbl.colon * % ÎŞ³ö°æµØ
+	{ "" % "[" bbl.sine.loco * "]" * bbl.colon * % æ— å‡ºç‰ˆåœ°
 	  publisher empty$
 	    { "there's neither pubaddress nor publisher in " cite$ * warning$
-	      "" * % "[" * bbl.sine.nomine * "]" * % ÎŞ³ö°æÕß
+	      "" * % "[" * bbl.sine.nomine * "]" * % æ— å‡ºç‰ˆè€…
 	    }
 	    { "there's a publisher but no pubaddress in " cite$ * warning$
-	      publisher *		% ÓĞ³ö°æÕß
+	      publisher *		% æœ‰å‡ºç‰ˆè€…
 	    }
 	  if$
 	}
 	{ publisher empty$
 	    { "there's a pubaddress but no publisher in " cite$ * warning$
-	      "" % "[" * bbl.sine.nomine * "]" * % ÎŞ³ö°æÕß
+	      "" % "[" * bbl.sine.nomine * "]" * % æ— å‡ºç‰ˆè€…
 	    }
-	    { pubaddress bbl.colon *	% ÓĞ³ö°æµØ
-	      publisher * }		% ÓĞ³ö°æÕß
+	    { pubaddress bbl.colon *	% æœ‰å‡ºç‰ˆåœ°
+	      publisher * }		% æœ‰å‡ºç‰ˆè€…
 	  if$
 	}
       if$
     }
     { address empty$
-	{ "" % "[" bbl.sine.loco * "]" * bbl.colon * % ÎŞ³ö°æµØ
+	{ "" % "[" bbl.sine.loco * "]" * bbl.colon * % æ— å‡ºç‰ˆåœ°
 	  publisher empty$
 	    { "there's neither address nor publisher in " cite$ * warning$
-	      "" * % "[" * bbl.sine.nomine * "]" * % ÎŞ³ö°æÕß
+	      "" * % "[" * bbl.sine.nomine * "]" * % æ— å‡ºç‰ˆè€…
 	    }
 	    { "there's a publisher but no address in " cite$ * warning$
-	      publisher *		% ÓĞ³ö°æÕß
+	      publisher *		% æœ‰å‡ºç‰ˆè€…
 	    }
 	  if$
 	}
 	{ publisher empty$
 	    { "there's a address but no publisher in " cite$ * warning$
-	      "" % "[" * bbl.sine.nomine * "]" * % ÎŞ³ö°æÕß
+	      "" % "[" * bbl.sine.nomine * "]" * % æ— å‡ºç‰ˆè€…
 	    }
-	    { address bbl.colon *	% ÓĞ³ö°æµØ
-	      publisher * }		% ÓĞ³ö°æÕß
+	    { address bbl.colon *	% æœ‰å‡ºç‰ˆåœ°
+	      publisher * }		% æœ‰å‡ºç‰ˆè€…
 	  if$
 	}
       if$
     }
   if$
   
-  % ³ö°æÄê
+  % å‡ºç‰ˆå¹´
   year empty$
     { "there's no year in " cite$ * warning$ }
     { type$ "inproceedings" =
@@ -1834,7 +1834,7 @@ FUNCTION {format.address.publisher.year} {
       if$
 	
       type$ "periodical" =
-	{ year2 empty$		% ¶ÔÁ¬Ğø³ö°æÎï¿ÉÒÔÅÅ°æ year2
+	{ year2 empty$		% å¯¹è¿ç»­å‡ºç‰ˆç‰©å¯ä»¥æ’ç‰ˆ year2
 	    { skip$ }
 	    { "--" * 
 	      year2 "l" change.case$ "now" =
@@ -1853,30 +1853,30 @@ FUNCTION {format.address.publisher.year} {
 %   % END OF DEBUG
 }
 
-% ³ö°æµØ: Ñ§Ğ£, ³ö°æÄê
+% å‡ºç‰ˆåœ°: å­¦æ ¡, å‡ºç‰ˆå¹´
 FUNCTION {format.address.school.year} {   
   new.block
   address empty$
-    { "[" bbl.sine.loco * "]" * bbl.colon * % ÎŞ³ö°æµØ
+    { "[" bbl.sine.loco * "]" * bbl.colon * % æ— å‡ºç‰ˆåœ°
       school empty$
 	{ "there's neither address nor school in " cite$ * warning$
-	  "[" bbl.sine.nomine * "]" * % ÎŞ³ö°æÕß
+	  "[" bbl.sine.nomine * "]" * % æ— å‡ºç‰ˆè€…
 	}
 	{ "there's a school but no address in " cite$ * warning$
-	   school *		% ÓĞ³ö°æÕß
+	   school *		% æœ‰å‡ºç‰ˆè€…
 	}
       if$
     }
-    { address bbl.colon *	% ÓĞ³ö°æµØ
+    { address bbl.colon *	% æœ‰å‡ºç‰ˆåœ°
       school empty$
 	{ "there's a address but no school in " cite$ * warning$
-	  "[" bbl.sine.nomine * "]" * % ÎŞ³ö°æÕß
+	  "[" bbl.sine.nomine * "]" * % æ— å‡ºç‰ˆè€…
 	}
-	{ school * }		% ÓĞ³ö°æÕß
+	{ school * }		% æœ‰å‡ºç‰ˆè€…
       if$
     }
   if$
-  % ³ö°æÄê
+  % å‡ºç‰ˆå¹´
   year empty$
     { "there's no year in " cite$ * warning$ }
     { bbl.comma * year * }
@@ -1913,47 +1913,47 @@ FUNCTION {format.note} {
 }
 
 %%%%%%%%%%%%%%%%%
-%% ÖøÂ¼¸ñÊ½: ×¨Öø
+%% è‘—å½•æ ¼å¼: ä¸“è‘—
 %%%%%%%%%%%%%%%%%
 
-% ÆÕÍ¨Í¼Êé
+% æ™®é€šå›¾ä¹¦
 FUNCTION {book} { 
-  start.entry			% ¿ªÊ¼
+  start.entry			% å¼€å§‹
 
-  author empty$			% Ö÷ÒªÔğÈÎÕß
+  author empty$			% ä¸»è¦è´£ä»»è€…
     { format.editors "author and editor" output.warn }
     { format.authors output.nonnull }
   if$		
-  format.book.title "title"      output.warn	   % ÌâÃûÏî		
-  format.translators             output		   % ÆäËûÔğÈÎÕß(¿ÉÑ¡)
-  format.edition                 output		   % °æ±¾Ïî
+  format.book.title "title"      output.warn	   % é¢˜åé¡¹		
+  format.translators             output		   % å…¶ä»–è´£ä»»è€…(å¯é€‰)
+  format.edition                 output		   % ç‰ˆæœ¬é¡¹
   format.address.publisher.year  output.nonnull	   %
   format.reference.date          output		   % 
-  format.url                     output		   % »ñÈ¡»ò·ÃÎÊÂ·¾¶
-  format.note                    output		   % ±¸×¢  
+  format.url                     output		   % è·å–æˆ–è®¿é—®è·¯å¾„
+  format.note                    output		   % å¤‡æ³¨  
 
   fin.entry
 }
 
-% ±ê×¼
+% æ ‡å‡†
 FUNCTION {standard} { 
   start.entry
   
-  organization empty$		% Ö÷ÒªÔğÈÎÈË
+  organization empty$		% ä¸»è¦è´£ä»»äºº
     { format.institution "organization and institution" output.warn }
     { format.organization output.nonnull }
   if$
-  format.book.title "title"     output.warn    % ÌâÃûÏî
-  format.translators            output	       % ÆäËûÔğÈÎÈË
-  format.edition                output	       % °æ±¾Ïî
-  format.address.publisher.year output.nonnull % ³ö°æÏî
+  format.book.title "title"     output.warn    % é¢˜åé¡¹
+  format.translators            output	       % å…¶ä»–è´£ä»»äºº
+  format.edition                output	       % ç‰ˆæœ¬é¡¹
+  format.address.publisher.year output.nonnull % å‡ºç‰ˆé¡¹
   format.url                    output	       % URL
-  format.note                   output	       % ±¸×¢Ïî
+  format.note                   output	       % å¤‡æ³¨é¡¹
 
   fin.entry
 }
 
-% Ñ§Î»ÂÛÎÄ 
+% å­¦ä½è®ºæ–‡ 
 FUNCTION {phdthesis} {
   start.entry
 
@@ -1965,7 +1965,7 @@ FUNCTION {phdthesis} {
   fin.entry
 }
 
-% »áÒéÂ¼/ÂÛÎÄ¼¯
+% ä¼šè®®å½•/è®ºæ–‡é›†
 FUNCTION {proceedings} { 
   start.entry
   
@@ -1984,7 +1984,7 @@ FUNCTION {proceedings} {
   fin.entry
 }
 
-% ¿Æ¼¼±¨¸æ
+% ç§‘æŠ€æŠ¥å‘Š
 FUNCTION {techreport} { 
   start.entry
   
@@ -2006,7 +2006,7 @@ FUNCTION {techreport} {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% ÖøÂ¼¸ñÊ½: ×¨ÖøÖĞÎö³öµÄÎÄÏ×
+%% è‘—å½•æ ¼å¼: ä¸“è‘—ä¸­æå‡ºçš„æ–‡çŒ®
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 FUNCTION {format.collection.editors} {
@@ -2042,8 +2042,7 @@ FUNCTION {format.collection.title} {
   booktitle empty$
     { "" }
     { new.block 
-%      "In " booktitle *   %lss
-      "" booktitle *   %lss
+      "In " booktitle *
 %       address empty$
 % 	{ skip$ }
 % 	{ bbl.comma * address * bbl.comma * 
@@ -2060,7 +2059,7 @@ FUNCTION {format.collection.title} {
     }
   if$
 }
-% Í¼ÊéÖĞÎö³öµÄÎÄÏ×
+% å›¾ä¹¦ä¸­æå‡ºçš„æ–‡çŒ®
 FUNCTION {inbook} { 
   start.entry
   
@@ -2071,18 +2070,18 @@ FUNCTION {inbook} {
   format.book.title "title"     output.warn
   format.collection.editors "editor" output.warn
   format.collection.title "booktitle" output.warn
-  format.translators            output	       % ÆäËûÔğÈÎÈË
-  format.edition                output	       % °æ±¾Ïî
-  format.address.publisher.year	output.nonnull % ³ö°æÏî
+  format.translators            output	       % å…¶ä»–è´£ä»»äºº
+  format.edition                output	       % ç‰ˆæœ¬é¡¹
+  format.address.publisher.year	output.nonnull % å‡ºç‰ˆé¡¹
   format.pages "pages"          output.warn    %
   format.url                    output	       % URL
-  format.note                   output	       % ±¸×¢Ïî
+  format.note                   output	       % å¤‡æ³¨é¡¹
 
   fin.entry
 }
 
 %%%%%%%%%%%%%%%%%
-%% ÖøÂ¼¸ñÊ½: ×¨Àû
+%% è‘—å½•æ ¼å¼: ä¸“åˆ©
 %%%%%%%%%%%%%%%%%
 FUNCTION {patent} {
   start.entry
@@ -2099,7 +2098,7 @@ FUNCTION {patent} {
   fin.entry
 }
 
-% µç×ÓÎÄÏ×¸üĞÂ»òĞŞ¸ÄÈÕÆÚ
+% ç”µå­æ–‡çŒ®æ›´æ–°æˆ–ä¿®æ”¹æ—¥æœŸ
 FUNCTION {format.update.date} {
   update empty$
     { "" }
@@ -2112,7 +2111,7 @@ FUNCTION {format.update.date} {
 }
 
 %%%%%%%%%%%%%%%%%%%%%
-%% ÖøÂ¼¸ñÊ½: µç×ÓÎÄÏ×
+%% è‘—å½•æ ¼å¼: ç”µå­æ–‡çŒ®
 %%%%%%%%%%%%%%%%%%%%%
 FUNCTION {electronic} {
   start.entry
@@ -2132,7 +2131,7 @@ FUNCTION {electronic} {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%
-%% ÖøÂ¼¸ñÊ½: Á¬Ğø³ö°æÎï
+%% è‘—å½•æ ¼å¼: è¿ç»­å‡ºç‰ˆç‰©
 %%%%%%%%%%%%%%%%%%%%%%%
 FUNCTION {periodical} { 
   start.entry
@@ -2157,7 +2156,7 @@ FUNCTION {format.journal.title} {
   if$
 }
 
-% Á¬Ğø³ö°æÎïÖĞÎö³öµÄÎÄÏ×
+% è¿ç»­å‡ºç‰ˆç‰©ä¸­æå‡ºçš„æ–‡çŒ®
 FUNCTION {article}
 { start.entry
 
@@ -2216,7 +2215,7 @@ FUNCTION {incollection}
   fin.entry
 }
 
-% ÂÛÎÄ¼¯ÖĞÎö³öµÄÎÄÏ×
+% è®ºæ–‡é›†ä¸­æå‡ºçš„æ–‡çŒ®
 FUNCTION {inproceedings} { 
   start.entry
 
@@ -2226,10 +2225,10 @@ FUNCTION {inproceedings} {
   format.collection.title "booktitle" output.warn
   format.address output
   format.month.year output
-%  format.address.publisher.year	output.nonnull % ³ö°æÏî
+%  format.address.publisher.year	output.nonnull % å‡ºç‰ˆé¡¹
   format.pages "pages"          output.warn    %
   format.url                    output	       % URL
-  format.note                   output	       % ±¸×¢Ïî 
+  format.note                   output	       % å¤‡æ³¨é¡¹ 
 %   format.in.booktitle "booktitle" output.warn
 %       %format.bvolume output
 %       %format.number.series output
@@ -2303,7 +2302,7 @@ FUNCTION {manual}
 % { "~[D]" 
 % % language empty$
 % %     { "[Master Thesis]" }
-% %     { "[Ë¶Ê¿Ñ§Î»ÂÛÎÄ]" }
+% %     { "[ç¡•å£«å­¦ä½è®ºæ–‡]" }
 % %   if$
 % }
 
@@ -2345,7 +2344,7 @@ FUNCTION {phdthesis.type}
 { "~[D]" 
 % language empty$
 %     { "[PhD Thesis]" }
-%     { "[²©Ê¿Ñ§Î»ÂÛÎÄ]" }
+%     { "[åšå£«å­¦ä½è®ºæ–‡]" }
 %   if$ 
 }
 
@@ -2363,7 +2362,7 @@ FUNCTION {unpublished}
   fin.entry
 }
 
-% ×¨ÓÃ¿ØÖÆÌõÄ¿ BUPTThesisBSTCTL ÓÃÓÚÌá¹©·½±ãµÄÓÃ»§ÉèÖÃ½Ó¿Ú
+% ä¸“ç”¨æ§åˆ¶æ¡ç›® BUPTThesisBSTCTL ç”¨äºæä¾›æ–¹ä¾¿çš„ç”¨æˆ·è®¾ç½®æ¥å£
 FUNCTION {BUPTThesisBSTCTL}{
   is.print.banners.to.terminal
     { "** BUPTThesis BST control entry " quote$ * cite$ * 
@@ -2396,7 +2395,7 @@ FUNCTION {BUPTThesisBSTCTL}{
 %       'is.forced.et.al :=
 %     }
 %   if$
-  % ÏÔÊ¾×÷ÕßÊıÄ¿
+  % æ˜¾ç¤ºä½œè€…æ•°ç›®
   CTLmax_names_forced_etal
   empty$
     { skip$ }
@@ -2405,7 +2404,7 @@ FUNCTION {BUPTThesisBSTCTL}{
       'max.num.names.before.forced.et.al :=
     }
   if$
-  % ÂÛÎÄ×÷ÕßÓ¢ÎÄĞÕÃû
+  % è®ºæ–‡ä½œè€…è‹±æ–‡å§“å
   CTLauthor_name_english
   empty$
     { skip$ }
@@ -2415,7 +2414,7 @@ FUNCTION {BUPTThesisBSTCTL}{
 %      "CTLauthor_name_english=" author.name.in.english * debug.output
     }
   if$
-  % ÂÛÎÄ×÷ÕßÖĞÎÄĞÕÃû
+  % è®ºæ–‡ä½œè€…ä¸­æ–‡å§“å
   CTLauthor_name_chinese
   empty$
     { skip$ }
@@ -2467,24 +2466,24 @@ FUNCTION {BUPTThesisBSTCTL}{
 %       'is.dash.repeated.names :=
 %     }
 %  if$
-%   CTLname_emph_author_en	% Ç¿µ÷ÏÔÊ¾µÄ×÷ÕßÓ¢ÎÄĞÕÃû
+%   CTLname_emph_author_en	% å¼ºè°ƒæ˜¾ç¤ºçš„ä½œè€…è‹±æ–‡å§“å
 %   empty$
-%     { skip$ }			% ÈôÃ»ÓĞ¸ø³öÔòÌø¹ı
+%     { skip$ }			% è‹¥æ²¡æœ‰ç»™å‡ºåˆ™è·³è¿‡
 %     { CTLname_emph_author_en
-%       'name.emph.author.en :=	% ·ñÔò¸üĞÂ name.emph.author.en
+%       'name.emph.author.en :=	% å¦åˆ™æ›´æ–° name.emph.author.en
 %     }
 %   if$
-%   CTLname_emph_author_zh	% Ç¿µ÷ÏÔÊ¾µÄ×÷ÕßÖĞÎÄĞÕÃû
+%   CTLname_emph_author_zh	% å¼ºè°ƒæ˜¾ç¤ºçš„ä½œè€…ä¸­æ–‡å§“å
 %   empty$
-%     { skip$ }			% ÈôÃ»ÓĞ¸ø³öÔòÌø¹ı
+%     { skip$ }			% è‹¥æ²¡æœ‰ç»™å‡ºåˆ™è·³è¿‡
 %     { CTLname_emph_author_zh
-%       'name.emph.author.zh :=	% ·ñÔò¸üĞÂ name.emph.author.zh
+%       'name.emph.author.zh :=	% å¦åˆ™æ›´æ–° name.emph.author.zh
 %     }
 %   if$
-  CTLname_format_string		% Ó¢ÎÄĞÕÃûÅÅ°æ¸ñÊ½×Ö·û´®
+  CTLname_format_string		% è‹±æ–‡å§“åæ’ç‰ˆæ ¼å¼å­—ç¬¦ä¸²
   empty$
-    { skip$ }			% ÈôÃ»ÓĞ×Ô¶¨ÒåÔòÌø¹ı
-    { CTLname_format_string	% ·ñÔò¸üĞÂ name.format.string
+    { skip$ }			% è‹¥æ²¡æœ‰è‡ªå®šä¹‰åˆ™è·³è¿‡
+    { CTLname_format_string	% å¦åˆ™æ›´æ–° name.format.string
       'name.format.string :=
     }
   if$
@@ -2513,7 +2512,7 @@ FUNCTION {BUPTThesisBSTCTL}{
 }
 
 %%%%%%%%%%%%
-%% ÌõÄ¿±ğÃû
+%% æ¡ç›®åˆ«å
 %%%%%%%%%%%%
 FUNCTION {mastersthesis} {phdthesis}
 FUNCTION {conference}    {inproceedings}
@@ -2525,22 +2524,22 @@ FUNCTION {default.type}  {misc}
 
 
 %%%%%%%%%%
-%% Ö÷³ÌĞò
+%% ä¸»ç¨‹åº
 %%%%%%%%%%
 
 READ
 
-EXECUTE {initialize.controls}	      % ³õÊ¼»¯¿ØÖÆ±äÁ¿
-EXECUTE {initialize.status.constants} % ³õÊ¼»¯×´Ì¬³£Á¿
-EXECUTE {banner.message}	      % ÏÔÊ¾³õÊ¼ÌáÊ¾ĞÅÏ¢
+EXECUTE {initialize.controls}	      % åˆå§‹åŒ–æ§åˆ¶å˜é‡
+EXECUTE {initialize.status.constants} % åˆå§‹åŒ–çŠ¶æ€å¸¸é‡
+EXECUTE {banner.message}	      % æ˜¾ç¤ºåˆå§‹æç¤ºä¿¡æ¯
 
-EXECUTE {initialize.longest.label}    % ³õÊ¼»¯×î³¤µÄ±êºÅ
-ITERATE {longest.label.pass}	      % ´¦Àí×î³¤µÄ±êºÅ
+EXECUTE {initialize.longest.label}    % åˆå§‹åŒ–æœ€é•¿çš„æ ‡å·
+ITERATE {longest.label.pass}	      % å¤„ç†æœ€é•¿çš„æ ‡å·
 
-EXECUTE {begin.bib}	              % ¿ªÊ¼
+EXECUTE {begin.bib}	              % å¼€å§‹
 ITERATE {call.type$}		      %
-EXECUTE {end.bib}		      % ½áÊø
+EXECUTE {end.bib}		      % ç»“æŸ
 
-EXECUTE {completed.message}	      % ÏÔÊ¾Íê³ÉÌáÊ¾ĞÅÏ¢
+EXECUTE {completed.message}	      % æ˜¾ç¤ºå®Œæˆæç¤ºä¿¡æ¯
 
 %% EOF
