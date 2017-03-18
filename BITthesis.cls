@@ -120,7 +120,7 @@
   \hbox{}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
 \renewcommand{\floatpagefraction}{0.80}
 % \bibliographystyle{plain}
-\bibliographystyle{GBT7714-2005NLang}%_  参考文献风格 added by wei.jianwen@gmail.com
+\bibliographystyle{GBT7714-2005NLang-ANSI-LSS}%_  参考文献风格 added by wei.jianwen@gmail.com
 \newcommand\CASTspace{\protect\CTEX@spaceChar\protect\CTEX@spaceChar}
 \def\CAST@getfileinfo#1 #2 #3\relax#4\relax{%
   \def\CASTfiledate{#1}%
