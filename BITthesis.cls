@@ -286,14 +286,17 @@
    {
     \heiti\zihao{3}
    \begin{minipage}[c][\textheight]{1em}
+   \baselineskip = 0.7\baselineskip
+   % \begin{minipage}{1em}
         % \CAST@value@title
         % \vskip 30mm
         % \CAST@value@school
         \vfill
         \CAST@value@title
-        \vfill
+        % \vfill
+        \vskip 30mm
         \CAST@value@school
-        \vskip 50mm
+        \vskip 60mm
    \end{minipage}
    }
    \end{center}
