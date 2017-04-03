@@ -26,9 +26,10 @@
 
 % 小节标题靠左对齐
 %\CTEXsetup[format+={\flushleft}]{section}
-\CTEXsetup[nameformat={\bfseries\heiti\zihao{-4}},
+\CTEXsetup[format+={\flushleft}]{section}
+\CTEXsetup[format+={\flushleft},nameformat={\bfseries\heiti\zihao{-4}},
             titleformat={\bfseries\heiti\zihao{-4}},indent={0pt}]{subsection}
-\CTEXsetup[nameformat={\zihao{-4}},
+\CTEXsetup[format+={\flushleft},nameformat={\zihao{-4}},
             titleformat={\zihao{-4}},indent={0pt}]{subsubsection}
 \newcommand{\supercite}[1]{\textsuperscript{\cite{#1}}}
 \begin{document}
